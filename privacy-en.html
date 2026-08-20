@@ -1,0 +1,143 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Privacy Policy · Tembló</title>
+<style>
+  :root { color-scheme: light dark; }
+  body {
+    font: 17px/1.65 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+    max-width: 46rem; margin: 0 auto; padding: 2rem 1.25rem 5rem;
+    color: #1a1c19; background: #f7fbf1;
+  }
+  @media (prefers-color-scheme: dark) {
+    body { color: #e2e3dd; background: #10140f; }
+    td, th { border-color: #333 !important; }
+  }
+  h1 { font-size: 1.9rem; line-height: 1.2; margin-bottom: .25rem; }
+  h2 { font-size: 1.25rem; margin-top: 2.5rem; color: #2e7d32; }
+  @media (prefers-color-scheme: dark) { h2 { color: #8fcf93; } }
+  .fecha { opacity: .7; font-size: .9rem; }
+  .clave { border-left: 4px solid #2e7d32; padding: .5rem 0 .5rem 1rem; margin: 1.5rem 0; }
+  table { border-collapse: collapse; width: 100%; margin: 1rem 0; font-size: .95rem; }
+  th, td { text-align: left; padding: .6rem .5rem; border-bottom: 1px solid #ddd; vertical-align: top; }
+  th { font-weight: 600; }
+  code { background: rgba(127,127,127,.15); padding: .1rem .3rem; border-radius: 3px; font-size: .9em; }
+  footer { margin-top: 3rem; font-size: .9rem; opacity: .75; }
+</style>
+</head>
+<body>
+
+<h1>Privacy Policy</h1>
+<p class="fecha"><strong>Tembló</strong> app (<code>com.jrsoft.terremotos</code>) · Last updated: 20 August 2026</p>
+
+<div class="clave">
+<p><strong>In one sentence:</strong> this app has no user accounts, does not record who you are, and does not send your location to its servers. Your location is used <em>inside your phone</em> to work out how far away earthquakes happened.</p>
+</div>
+
+<h2>Who is responsible</h2>
+<p>The data controller is <strong>JR Soft</strong>, trading name of <strong>Javier Román Sáez</strong>, developer of the Tembló app. You can get in touch at <strong><a href="mailto:demual@gmail.com">demual@gmail.com</a></strong>.</p>
+
+<h2>What this app does NOT do</h2>
+<ul>
+  <li>There is no sign-up, account, username or password. You are never asked for an email address, a phone number or a name.</li>
+  <li>No analytics or usage-statistics tools are used. There is no Google Analytics, no Firebase Analytics and no crash reporting.</li>
+  <li>No data is sold, rented or shared with third parties for commercial purposes.</li>
+  <li><strong>Your location is never sent to this app's servers.</strong> The app downloads the worldwide earthquake list and performs every distance calculation and every filter inside your phone. The server does not know where you are, which part of the map you are looking at, or which earthquakes interest you.</li>
+</ul>
+
+<h2>Data that stays only on your phone</h2>
+<p>This information is kept in the app's private storage and never leaves it. It disappears completely if you uninstall the app or clear its data from Android settings.</p>
+<ul>
+  <li>Your filters: magnitude, period, depth, event type and sort order.</li>
+  <li>Your settings: theme, language and units.</li>
+  <li>Any <strong>watched areas</strong> you have created, with their coordinates, radius and magnitude threshold.</li>
+  <li>The <strong>manual reference point</strong>, if you have set one.</li>
+  <li>The last map position, if you choose to have the app open where you left it.</li>
+  <li>A copy of the most recently downloaded earthquakes, so the app works offline.</li>
+</ul>
+
+<h2>Data that does leave your phone</h2>
+
+<h3>Your location</h3>
+<p>The app asks for location permission <strong>only when you turn on a feature that needs it</strong>, never on first launch. If you decline, the app still works: you lose distances and sorting by proximity, and you can get both back by setting a reference point by hand in Settings.</p>
+<p>Location is used inside your phone to calculate how far each earthquake was from you and to decide whether an alert applies to you. <strong>Those coordinates are not sent to any server.</strong></p>
+<p>There is one exception worth understanding. If you enable alerts, your phone subscribes to Google's notification service (Firebase Cloud Messaging) using identifiers that represent <strong>5-degree cells</strong> of the planet — grid squares roughly 550 km across. Google receives those subscriptions. This means Google can tell which 550 km square contains a watched area of yours, but not your position: the square is deliberately enormous, and that is precisely why the design works this way.</p>
+
+<h3>IP address</h3>
+<p>As with any app that connects to the internet, the servers the app talks to receive your IP address. This happens with:</p>
+<ul>
+  <li>This app's server, which serves the earthquake list.</li>
+  <li><strong>USGS</strong> (United States Geological Survey), queried directly as a fallback if the main server does not respond.</li>
+  <li><strong>Google Maps</strong>, which serves the map imagery.</li>
+  <li><strong>Firebase Cloud Messaging</strong>, from Google, which delivers alerts.</li>
+</ul>
+<p>Your IP address appears in this app's server technical logs, which exist to diagnose errors and detect abuse. It is not cross-referenced with any other data, because there is no other data to cross-reference it with: requests carry no user or device identifier.</p>
+
+<h3>Notification identifier</h3>
+<p>If you enable alerts, Firebase Cloud Messaging assigns your installation its own identifier so that messages can be delivered. It identifies the device, not you, and it is renewed if you uninstall and reinstall the app. Turning alerts off in the app cancels the subscriptions.</p>
+
+<h3>Advertising identifier</h3>
+<p>The app includes Google's advertising SDK (AdMob) and therefore declares the <code>com.google.android.gms.permission.AD_ID</code> permission, which grants access to the Android advertising identifier. That identifier can be reset or deleted from <em>Android Settings → Google → Ads</em>.</p>
+<p>In the European Economic Area and the United Kingdom, the app will show Google's consent form (UMP) before serving personalised advertising. You can change your choice at any time from the app's settings.</p>
+
+<h2>Third parties involved</h2>
+<table>
+  <tr><th>Service</th><th>Purpose</th><th>Their policy</th></tr>
+  <tr>
+    <td>Google Firebase Cloud Messaging</td>
+    <td>Delivering earthquake alerts</td>
+    <td><a href="https://firebase.google.com/support/privacy">firebase.google.com/support/privacy</a></td>
+  </tr>
+  <tr>
+    <td>Google Maps</td>
+    <td>Drawing the map</td>
+    <td><a href="https://policies.google.com/privacy">policies.google.com/privacy</a></td>
+  </tr>
+  <tr>
+    <td>Google AdMob</td>
+    <td>Advertising</td>
+    <td><a href="https://policies.google.com/technologies/ads">policies.google.com/technologies/ads</a></td>
+  </tr>
+  <tr>
+    <td>USGS</td>
+    <td>Seismic data (public source)</td>
+    <td><a href="https://www.usgs.gov/policies/privacy-policy">usgs.gov/policies/privacy-policy</a></td>
+  </tr>
+  <tr>
+    <td>EMSC</td>
+    <td>Seismic data (via our server)</td>
+    <td><a href="https://www.emsc-csem.org/">emsc-csem.org</a></td>
+  </tr>
+</table>
+<p>The seismic data shown in the app comes from USGS and EMSC. This app is not affiliated with either organisation.</p>
+
+<h2>Legal basis and retention</h2>
+<p>Processing relies on your <strong>consent</strong>, given when you grant location and notification permissions, and withdrawable at any time from Android settings or from the app itself. For personalised advertising, consent is collected through Google's form (UMP).</p>
+<p>Server technical logs containing IP addresses are kept for as long as Google Cloud retains them by default (30 days) and are then deleted automatically. Data stored on your phone remains until you uninstall the app or clear its data.</p>
+
+<h2>Your rights</h2>
+<p>If you live in the European Union, the GDPR grants you rights of access, rectification, erasure, restriction, portability and objection. In practice, and given that this app stores nothing tied to you as a person:</p>
+<ul>
+  <li><strong>Erasure:</strong> uninstalling the app deletes everything it holds about you. There is no need to ask anyone.</li>
+  <li><strong>Objection and withdrawal of consent:</strong> revoke location permission or turn alerts off in Android settings.</li>
+  <li><strong>Access:</strong> you can write to the contact address. Note that, as there are no accounts or user identifiers, there is no technical way to locate data that is "yours" on the server.</li>
+</ul>
+<p>You may also lodge a complaint with your country's supervisory authority. In Spain this is the <a href="https://www.aepd.es">Agencia Española de Protección de Datos</a>.</p>
+
+<h2>Children</h2>
+<p>This app is not directed at children under 13 and does not knowingly collect data from them.</p>
+
+<h2>Changes to this policy</h2>
+<p>If this policy changes substantially, the new version will be published at this same address with a different update date, and the app will show a corresponding notice.</p>
+
+<h2>Important notice about the service</h2>
+<p>This app is <strong>not an official early warning system</strong>. Alerts arrive once the earthquake has already happened and a seismological agency has published it. The data is preliminary and may be revised or withdrawn. It does not replace instructions from civil protection or the emergency services.</p>
+
+<footer>
+<p>Tembló · JR Soft (Javier Román Sáez) · <code>com.jrsoft.terremotos</code> · Contact: <strong><a href="mailto:demual@gmail.com">demual@gmail.com</a></strong></p>
+</footer>
+
+</body>
+</html>

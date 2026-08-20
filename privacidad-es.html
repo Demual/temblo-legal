@@ -1,0 +1,143 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Política de privacidad · Tembló</title>
+<style>
+  :root { color-scheme: light dark; }
+  body {
+    font: 17px/1.65 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+    max-width: 46rem; margin: 0 auto; padding: 2rem 1.25rem 5rem;
+    color: #1a1c19; background: #f7fbf1;
+  }
+  @media (prefers-color-scheme: dark) {
+    body { color: #e2e3dd; background: #10140f; }
+    td, th { border-color: #333 !important; }
+  }
+  h1 { font-size: 1.9rem; line-height: 1.2; margin-bottom: .25rem; }
+  h2 { font-size: 1.25rem; margin-top: 2.5rem; color: #2e7d32; }
+  @media (prefers-color-scheme: dark) { h2 { color: #8fcf93; } }
+  .fecha { opacity: .7; font-size: .9rem; }
+  .clave { border-left: 4px solid #2e7d32; padding: .5rem 0 .5rem 1rem; margin: 1.5rem 0; }
+  table { border-collapse: collapse; width: 100%; margin: 1rem 0; font-size: .95rem; }
+  th, td { text-align: left; padding: .6rem .5rem; border-bottom: 1px solid #ddd; vertical-align: top; }
+  th { font-weight: 600; }
+  code { background: rgba(127,127,127,.15); padding: .1rem .3rem; border-radius: 3px; font-size: .9em; }
+  footer { margin-top: 3rem; font-size: .9rem; opacity: .75; }
+</style>
+</head>
+<body>
+
+<h1>Política de privacidad</h1>
+<p class="fecha">Aplicación <strong>Tembló</strong> (<code>com.jrsoft.terremotos</code>) · Última actualización: 20 de agosto de 2026</p>
+
+<div class="clave">
+<p><strong>En una frase:</strong> esta aplicación no tiene cuentas de usuario, no registra quién eres y no envía tu ubicación a sus servidores. Tu ubicación se usa <em>dentro del teléfono</em> para calcular a qué distancia han ocurrido los terremotos.</p>
+</div>
+
+<h2>Quién es el responsable</h2>
+<p>El responsable del tratamiento es <strong>JR Soft</strong>, nombre comercial de <strong>Javier Román Sáez</strong>, desarrollador de la aplicación Tembló. Puedes contactar en <strong><a href="mailto:demual@gmail.com">demual@gmail.com</a></strong>.</p>
+
+<h2>Lo que esta aplicación NO hace</h2>
+<ul>
+  <li>No hay registro, cuenta, usuario ni contraseña. Nunca se te pide un correo, un teléfono ni un nombre.</li>
+  <li>No se usa ninguna herramienta de analítica ni de estadísticas de uso. No hay Google Analytics, ni Firebase Analytics, ni informes de fallos.</li>
+  <li>No se venden, alquilan ni ceden datos a terceros con fines comerciales.</li>
+  <li><strong>Tu ubicación nunca se envía a los servidores de esta aplicación.</strong> La app descarga la lista de terremotos del mundo entero y hace todos los cálculos de distancia y todos los filtros dentro de tu teléfono. El servidor no sabe dónde estás, ni qué zona del mapa miras, ni qué sismos te interesan.</li>
+</ul>
+
+<h2>Datos que se quedan solo en tu teléfono</h2>
+<p>Esta información se guarda en el almacenamiento privado de la app y no sale de ella. Desaparece por completo si desinstalas la aplicación o borras sus datos desde los ajustes de Android.</p>
+<ul>
+  <li>Tus filtros: magnitud, periodo, profundidad, tipo de evento y criterio de orden.</li>
+  <li>Tus ajustes: tema, idioma y unidades.</li>
+  <li>Las <strong>zonas vigiladas</strong> que hayas creado, con sus coordenadas, su radio y su umbral de magnitud.</li>
+  <li>El <strong>punto de referencia manual</strong>, si lo has definido.</li>
+  <li>La última posición del mapa, si eliges que la app se abra donde la dejaste.</li>
+  <li>Una copia de los últimos terremotos descargados, para que la app funcione sin conexión.</li>
+</ul>
+
+<h2>Datos que sí salen del teléfono</h2>
+
+<h3>Tu ubicación</h3>
+<p>La aplicación pide permiso de ubicación <strong>solo cuando activas una función que lo necesita</strong>, nunca al abrirla por primera vez. Si no lo concedes, la app sigue funcionando: pierdes las distancias y el orden por cercanía, y puedes recuperarlos definiendo un punto de referencia a mano en Ajustes.</p>
+<p>La ubicación se usa dentro del teléfono para calcular a qué distancia de ti ha ocurrido cada terremoto y para decidir si un aviso te corresponde. <strong>Esas coordenadas no se envían a ningún servidor.</strong></p>
+<p>Hay una excepción que conviene entender bien. Si activas los avisos, el teléfono se suscribe al servicio de notificaciones de Google (Firebase Cloud Messaging) usando unos identificadores que representan <strong>celdas de 5 grados</strong> del planeta, es decir, cuadrículas de unos 550 km de lado. Google recibe esas suscripciones. Eso significa que Google puede saber en qué cuadrícula de 550 km tienes una zona vigilada, pero no tu posición: la cuadrícula es deliberadamente enorme, y ese es justo el motivo del diseño.</p>
+
+<h3>Dirección IP</h3>
+<p>Como en cualquier aplicación que se conecta a internet, los servidores con los que habla la app reciben tu dirección IP. Ocurre con:</p>
+<ul>
+  <li>El servidor de esta aplicación, que sirve la lista de terremotos.</li>
+  <li><strong>USGS</strong> (<em>United States Geological Survey</em>), que se consulta directamente como respaldo si el servidor principal no responde.</li>
+  <li><strong>Google Maps</strong>, que sirve las imágenes del mapa.</li>
+  <li><strong>Firebase Cloud Messaging</strong>, de Google, que entrega los avisos.</li>
+</ul>
+<p>La dirección IP queda en los registros técnicos del servidor de esta aplicación, que sirven para diagnosticar errores y detectar abusos. No se cruza con ningún otro dato porque no hay ningún otro dato con el que cruzarla: las peticiones no llevan identificador de usuario ni de dispositivo.</p>
+
+<h3>Identificador de notificaciones</h3>
+<p>Si activas los avisos, Firebase Cloud Messaging asigna a tu instalación un identificador propio para poder entregar los mensajes. Es un identificador del dispositivo, no tuyo, y se renueva si desinstalas y reinstalas la aplicación. Desactivar los avisos en la app cancela las suscripciones.</p>
+
+<h3>Identificador de publicidad</h3>
+<p>La aplicación incluye el SDK de publicidad de Google (AdMob) y, por tanto, declara el permiso <code>com.google.android.gms.permission.AD_ID</code>, que da acceso al identificador de publicidad de Android. Este identificador es reiniciable y borrable desde <em>Ajustes de Android → Google → Anuncios</em>.</p>
+<p>En los países del Espacio Económico Europeo y el Reino Unido, la aplicación mostrará el formulario de consentimiento de Google (UMP) antes de servir publicidad personalizada. Puedes cambiar tu elección en cualquier momento desde los ajustes de la aplicación.</p>
+
+<h2>Terceros implicados</h2>
+<table>
+  <tr><th>Servicio</th><th>Para qué</th><th>Su política</th></tr>
+  <tr>
+    <td>Google Firebase Cloud Messaging</td>
+    <td>Entregar los avisos de terremoto</td>
+    <td><a href="https://firebase.google.com/support/privacy">firebase.google.com/support/privacy</a></td>
+  </tr>
+  <tr>
+    <td>Google Maps</td>
+    <td>Dibujar el mapa</td>
+    <td><a href="https://policies.google.com/privacy">policies.google.com/privacy</a></td>
+  </tr>
+  <tr>
+    <td>Google AdMob</td>
+    <td>Publicidad</td>
+    <td><a href="https://policies.google.com/technologies/ads">policies.google.com/technologies/ads</a></td>
+  </tr>
+  <tr>
+    <td>USGS</td>
+    <td>Datos sísmicos (fuente pública)</td>
+    <td><a href="https://www.usgs.gov/policies/privacy-policy">usgs.gov/policies/privacy-policy</a></td>
+  </tr>
+  <tr>
+    <td>EMSC</td>
+    <td>Datos sísmicos (a través de nuestro servidor)</td>
+    <td><a href="https://www.emsc-csem.org/">emsc-csem.org</a></td>
+  </tr>
+</table>
+<p>Los datos sísmicos que muestra la aplicación proceden de USGS y EMSC. Esta aplicación no está afiliada a ninguna de las dos organizaciones.</p>
+
+<h2>Base legal y conservación</h2>
+<p>El tratamiento se apoya en tu <strong>consentimiento</strong>, que das al conceder los permisos de ubicación y de notificaciones, y que puedes retirar en cualquier momento desde los ajustes de Android o desde la propia aplicación. En el caso de la publicidad personalizada, el consentimiento se recoge mediante el formulario de Google (UMP).</p>
+<p>Los registros técnicos del servidor con direcciones IP se conservan el tiempo que Google Cloud los mantiene por defecto (30 días) y después se eliminan automáticamente. Los datos que se guardan en tu teléfono permanecen hasta que desinstales la aplicación o borres sus datos.</p>
+
+<h2>Tus derechos</h2>
+<p>Si resides en la Unión Europea, el RGPD te reconoce los derechos de acceso, rectificación, supresión, limitación, portabilidad y oposición. En la práctica, y dado que esta aplicación no guarda ningún dato asociado a tu persona:</p>
+<ul>
+  <li><strong>Supresión:</strong> desinstalar la aplicación borra todo lo que guarda de ti. No hace falta pedir nada a nadie.</li>
+  <li><strong>Oposición y retirada del consentimiento:</strong> revocar el permiso de ubicación o desactivar los avisos desde los ajustes de Android.</li>
+  <li><strong>Acceso:</strong> puedes escribir a la dirección de contacto. Ten en cuenta que, al no existir cuentas ni identificadores de usuario, no hay forma técnica de localizar unos datos "tuyos" en el servidor.</li>
+</ul>
+<p>También puedes reclamar ante la autoridad de control de tu país. En España es la <a href="https://www.aepd.es">Agencia Española de Protección de Datos</a>.</p>
+
+<h2>Menores</h2>
+<p>Esta aplicación no está dirigida a menores de 13 años y no recoge conscientemente datos de ellos.</p>
+
+<h2>Cambios en esta política</h2>
+<p>Si esta política cambia de forma sustancial, se publicará la versión nueva en esta misma dirección con una fecha de actualización distinta, y la aplicación mostrará el aviso correspondiente.</p>
+
+<h2>Advertencia importante sobre el servicio</h2>
+<p>Esta aplicación <strong>no es un sistema oficial de alerta temprana</strong>. Los avisos llegan cuando el terremoto ya ha ocurrido y una agencia sismológica lo ha publicado. Los datos son preliminares y pueden ser revisados o retirados. No sustituye a las indicaciones de Protección Civil ni de los servicios de emergencia.</p>
+
+<footer>
+<p>Tembló · JR Soft (Javier Román Sáez) · <code>com.jrsoft.terremotos</code> · Contacto: <strong><a href="mailto:demual@gmail.com">demual@gmail.com</a></strong></p>
+</footer>
+
+</body>
+</html>
