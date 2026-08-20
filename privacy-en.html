@@ -62,7 +62,7 @@
 
 <h3>Your location</h3>
 <p>The app asks for location permission <strong>only when you turn on a feature that needs it</strong>, never on first launch. If you decline, the app still works: you lose distances and sorting by proximity, and you can get both back by setting a reference point by hand in Settings.</p>
-<p>Location is used inside your phone to calculate how far each earthquake was from you and to decide whether an alert applies to you. <strong>Those coordinates are not sent to any server.</strong></p>
+<p>Location is used inside your phone to calculate how far each earthquake was from you and to decide whether an alert applies to you. <strong>Those coordinates are not sent to any server, the advertising network included.</strong></p>
 <p>There is one exception worth understanding. If you enable alerts, your phone subscribes to Google's notification service (Firebase Cloud Messaging) using identifiers that represent <strong>5-degree cells</strong> of the planet — grid squares roughly 550 km across. Google receives those subscriptions. This means Google can tell which 550 km square contains a watched area of yours, but not your position: the square is deliberately enormous, and that is precisely why the design works this way.</p>
 
 <h3>IP address</h3>
@@ -81,6 +81,7 @@
 <h3>Advertising identifier</h3>
 <p>The app includes Google's advertising SDK (AdMob) and therefore declares the <code>com.google.android.gms.permission.AD_ID</code> permission, which grants access to the Android advertising identifier. That identifier can be reset or deleted from <em>Android Settings → Google → Ads</em>.</p>
 <p>In the European Economic Area and the United Kingdom, the app will show Google's consent form (UMP) before serving personalised advertising. You can change your choice at any time from the app's settings.</p>
+<p>That form lists <strong>precise geolocation</strong> among the purposes advertising vendors may ask for, and it is worth being exact about what that means. <strong>This app does not hand your coordinates to the advertising SDK</strong>: the ad request goes out with no location data attached. What the form asks is whether you consent to Google and the vendors listed there processing data for those purposes, under their own policies and by their own means. If you decline, you get non-personalised advertising and the app works exactly the same.</p>
 
 <h2>Third parties involved</h2>
 <table>

@@ -62,7 +62,7 @@
 
 <h3>Tu ubicación</h3>
 <p>La aplicación pide permiso de ubicación <strong>solo cuando activas una función que lo necesita</strong>, nunca al abrirla por primera vez. Si no lo concedes, la app sigue funcionando: pierdes las distancias y el orden por cercanía, y puedes recuperarlos definiendo un punto de referencia a mano en Ajustes.</p>
-<p>La ubicación se usa dentro del teléfono para calcular a qué distancia de ti ha ocurrido cada terremoto y para decidir si un aviso te corresponde. <strong>Esas coordenadas no se envían a ningún servidor.</strong></p>
+<p>La ubicación se usa dentro del teléfono para calcular a qué distancia de ti ha ocurrido cada terremoto y para decidir si un aviso te corresponde. <strong>Esas coordenadas no se envían a ningún servidor, tampoco a la red publicitaria.</strong></p>
 <p>Hay una excepción que conviene entender bien. Si activas los avisos, el teléfono se suscribe al servicio de notificaciones de Google (Firebase Cloud Messaging) usando unos identificadores que representan <strong>celdas de 5 grados</strong> del planeta, es decir, cuadrículas de unos 550 km de lado. Google recibe esas suscripciones. Eso significa que Google puede saber en qué cuadrícula de 550 km tienes una zona vigilada, pero no tu posición: la cuadrícula es deliberadamente enorme, y ese es justo el motivo del diseño.</p>
 
 <h3>Dirección IP</h3>
@@ -81,6 +81,7 @@
 <h3>Identificador de publicidad</h3>
 <p>La aplicación incluye el SDK de publicidad de Google (AdMob) y, por tanto, declara el permiso <code>com.google.android.gms.permission.AD_ID</code>, que da acceso al identificador de publicidad de Android. Este identificador es reiniciable y borrable desde <em>Ajustes de Android → Google → Anuncios</em>.</p>
 <p>En los países del Espacio Económico Europeo y el Reino Unido, la aplicación mostrará el formulario de consentimiento de Google (UMP) antes de servir publicidad personalizada. Puedes cambiar tu elección en cualquier momento desde los ajustes de la aplicación.</p>
+<p>Ese formulario menciona la <strong>geolocalización precisa</strong> entre las finalidades que los proveedores publicitarios pueden solicitar, y conviene ser exacto sobre lo que eso significa. <strong>Esta aplicación no le entrega tus coordenadas al SDK de publicidad</strong>: la petición de anuncio sale sin ningún dato de ubicación. Lo que el formulario te pregunta es si consientes que Google y los proveedores que allí se enumeran traten datos para esas finalidades, con sus propias políticas y por sus propios medios. Si lo rechazas, verás publicidad no personalizada y la aplicación funcionará exactamente igual.</p>
 
 <h2>Terceros implicados</h2>
 <table>
