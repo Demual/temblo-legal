@@ -1,0 +1,152 @@
+<!doctype html>
+<html lang="ca">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Política de privadesa · Tembló</title>
+<style>
+  :root { color-scheme: light dark; }
+  body {
+    font: 17px/1.65 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+    max-width: 46rem; margin: 0 auto; padding: 2rem 1.25rem 5rem;
+    color: #1a1c19; background: #f7fbf1;
+  }
+  @media (prefers-color-scheme: dark) {
+    body { color: #e2e3dd; background: #10140f; }
+    td, th { border-color: #333 !important; }
+  }
+  h1 { font-size: 1.9rem; line-height: 1.2; margin-bottom: .25rem; }
+  h2 { font-size: 1.25rem; margin-top: 2.5rem; color: #2e7d32; }
+  @media (prefers-color-scheme: dark) { h2 { color: #8fcf93; } }
+  .fecha { opacity: .7; font-size: .9rem; }
+  .clave { border-left: 4px solid #2e7d32; padding: .5rem 0 .5rem 1rem; margin: 1.5rem 0; }
+  table { border-collapse: collapse; width: 100%; margin: 1rem 0; font-size: .95rem; }
+  th, td { text-align: left; padding: .6rem .5rem; border-bottom: 1px solid #ddd; vertical-align: top; }
+  th { font-weight: 600; }
+  code { background: rgba(127,127,127,.15); padding: .1rem .3rem; border-radius: 3px; font-size: .9em; }
+  footer { margin-top: 3rem; font-size: .9rem; opacity: .75; }
+</style>
+</head>
+<body>
+<h1>Política de privadesa</h1>
+<p class="fecha">Aplicació <strong>Tembló</strong> (<code>com.jrsoft.terremotos</code>) · Darrera actualització: 1 d'octubre de 2026</p>
+
+<div class="clave">
+<p><strong>En una frase:</strong> aquesta aplicació no té comptes d'usuari, no registra qui ets i no envia la teva ubicació als seus servidors. La teva ubicació es fa servir <em>dins del telèfon</em> per calcular a quina distància han passat els terratrèmols.</p>
+</div>
+
+<h2>Qui n'és el responsable</h2>
+<p>El responsable del tractament és <strong>JR Soft</strong>, nom comercial de <strong>Javier Román Sáez</strong>, desenvolupador de l'aplicació Tembló. Pots contactar-hi a <strong><a href="mailto:demual@gmail.com">demual@gmail.com</a></strong>.</p>
+
+<h2>El que aquesta aplicació NO fa</h2>
+<ul>
+  <li>No hi ha registre, compte, usuari ni contrasenya. Mai no se't demana un correu, un telèfon ni un nom.</li>
+  <li>No es fa servir cap eina d'analítica ni d'estadístiques d'ús. No hi ha Google Analytics, ni Firebase Analytics, ni informes d'errors.</li>
+  <li>No es venen, lloguen ni cedeixen dades a tercers amb finalitats comercials.</li>
+  <li><strong>La teva ubicació no s'envia mai als servidors d'aquesta aplicació.</strong> L'aplicació baixa la llista de terratrèmols de tot el món i fa tots els càlculs de distància i tots els filtres dins del teu telèfon. El servidor no sap on ets, ni quina zona del mapa mires, ni quins sismes t'interessen.</li>
+</ul>
+
+<h2>Dades que només es queden al teu telèfon</h2>
+<p>Aquesta informació es desa a l'emmagatzematge privat de l'aplicació i no en surt. Desapareix completament si desinstal·les l'aplicació o n'esborres les dades des de la configuració d'Android.</p>
+<ul>
+  <li>Els teus filtres: magnitud, període, profunditat, tipus d'esdeveniment i criteri d'ordenació.</li>
+  <li>La teva configuració: tema, idioma i unitats.</li>
+  <li>Les <strong>zones vigilades</strong> que hagis creat, amb les coordenades, el radi i el llindar de magnitud.</li>
+  <li>El <strong>punt de referència manual</strong>, si l'has definit.</li>
+  <li>La darrera posició del mapa, si tries que l'aplicació s'obri on la vas deixar.</li>
+  <li>Una còpia dels darrers terratrèmols baixats, perquè l'aplicació funcioni sense connexió.</li>
+</ul>
+
+<h2>Dades que sí que surten del telèfon</h2>
+
+<h3>La teva ubicació</h3>
+<p>L'aplicació demana permís d'ubicació <strong>només quan actives una funció que el necessita</strong>, mai quan l'obres per primera vegada. Si no el concedeixes, l'aplicació continua funcionant: perds les distàncies i l'ordenació per proximitat, i les pots recuperar definint un punt de referència a mà a la Configuració.</p>
+<p>La ubicació es fa servir dins del telèfon per calcular a quina distància de tu ha passat cada terratrèmol i per decidir si un avís et correspon. <strong>Aquestes coordenades no s'envien a cap servidor, tampoc a la xarxa publicitària.</strong></p>
+<p>Hi ha una excepció que convé entendre bé. Si actives els avisos, el telèfon se subscriu al servei de notificacions de Google (Firebase Cloud Messaging) amb uns identificadors que representen <strong>cel·les de 5 graus</strong> del planeta, és a dir, quadrícules d'uns 550 km de costat. Google rep aquestes subscripcions. Això vol dir que Google pot saber en quina quadrícula de 550 km tens una zona vigilada, però no la teva posició: la quadrícula és deliberadament enorme, i aquest és justament el motiu del disseny.</p>
+
+<h3>Adreça IP</h3>
+<p>Com en qualsevol aplicació que es connecta a internet, els servidors amb què parla l'aplicació reben la teva adreça IP. Passa amb:</p>
+<ul>
+  <li>El servidor d'aquesta aplicació, que serveix la llista de terratrèmols.</li>
+  <li>L'<strong>USGS</strong> (<em>United States Geological Survey</em>), que es consulta directament com a alternativa si el servidor principal no respon.</li>
+  <li><strong>Google Maps</strong>, que serveix les imatges del mapa.</li>
+  <li><strong>Firebase Cloud Messaging</strong>, de Google, que lliura els avisos.</li>
+  <li><strong>Firebase Remote Config</strong>, de Google, que indica a l'aplicació on i amb quina freqüència ha de mostrar anuncis.</li>
+</ul>
+<p>L'adreça IP queda als registres tècnics del servidor d'aquesta aplicació, que serveixen per diagnosticar errors i detectar abusos. No es creua amb cap altra dada perquè no hi ha cap altra dada amb què creuar-la: les peticions no porten identificador d'usuari ni de dispositiu.</p>
+
+<h3>Identificador de notificacions</h3>
+<p>Si actives els avisos, Firebase Cloud Messaging assigna a la teva instal·lació un identificador propi per poder lliurar els missatges. És un identificador del dispositiu, no teu, i es renova si desinstal·les i tornes a instal·lar l'aplicació. Desactivar els avisos a l'aplicació cancel·la les subscripcions.</p>
+
+<h3>Configuració remota de la publicitat</h3>
+<p>Per poder ajustar o retirar la publicitat sense publicar una versió nova (per exemple, després d'un terratrèmol greu), l'aplicació consulta <strong>Firebase Remote Config</strong>, de Google, on i amb quina freqüència ha de mostrar anuncis. Aquesta consulta porta un identificador de la instal·lació que genera Firebase, però cap dada teva ni la teva ubicació.</p>
+
+<h3>Identificador de publicitat</h3>
+<p>L'aplicació inclou l'SDK de publicitat de Google (AdMob) i, per tant, declara el permís <code>com.google.android.gms.permission.AD_ID</code>, que dona accés a l'identificador de publicitat d'Android. Aquest identificador es pot restablir i esborrar des de <em>Configuració d'Android → Google → Anuncis</em>.</p>
+<p>Als països de l'Espai Econòmic Europeu i al Regne Unit, l'aplicació mostrarà el formulari de consentiment de Google (UMP) abans de servir publicitat personalitzada. Pots canviar la teva elecció en qualsevol moment des de la configuració de l'aplicació.</p>
+<p>Aquest formulari esmenta la <strong>geolocalització precisa</strong> entre les finalitats que els proveïdors publicitaris poden sol·licitar, i convé ser exactes sobre què vol dir. <strong>Aquesta aplicació no lliura les teves coordenades a l'SDK de publicitat</strong>: la petició d'anunci surt sense cap dada d'ubicació. El que el formulari et pregunta és si consents que Google i els proveïdors que s'hi enumeren tractin dades per a aquestes finalitats, amb les seves pròpies polítiques i pels seus propis mitjans. Si ho rebutges, veuràs publicitat no personalitzada i l'aplicació funcionarà exactament igual.</p>
+
+<h2>Tercers implicats</h2>
+<table>
+  <tr><th>Servei</th><th>Per a què</th><th>La seva política</th></tr>
+  <tr>
+    <td>Google Firebase Cloud Messaging</td>
+    <td>Lliurar els avisos de terratrèmol</td>
+    <td><a href="https://firebase.google.com/support/privacy">firebase.google.com/support/privacy</a></td>
+  </tr>
+  <tr>
+    <td>Google Maps</td>
+    <td>Dibuixar el mapa</td>
+    <td><a href="https://policies.google.com/privacy">policies.google.com/privacy</a></td>
+  </tr>
+  <tr>
+    <td>Google AdMob</td>
+    <td>Publicitat</td>
+    <td><a href="https://policies.google.com/technologies/ads">policies.google.com/technologies/ads</a></td>
+  </tr>
+  <tr>
+    <td>Google Firebase Remote Config</td>
+    <td>Ajustar o retirar la publicitat sense publicar una versió nova</td>
+    <td><a href="https://firebase.google.com/support/privacy">firebase.google.com/support/privacy</a></td>
+  </tr>
+  <tr>
+    <td>USGS</td>
+    <td>Dades sísmiques (font pública)</td>
+    <td><a href="https://www.usgs.gov/policies/privacy-policy">usgs.gov/policies/privacy-policy</a></td>
+  </tr>
+  <tr>
+    <td>EMSC</td>
+    <td>Dades sísmiques (a través del nostre servidor)</td>
+    <td><a href="https://www.emsc-csem.org/">emsc-csem.org</a></td>
+  </tr>
+</table>
+<p>Les dades sísmiques que mostra l'aplicació procedeixen de l'USGS i l'EMSC. Aquesta aplicació no està afiliada a cap de les dues organitzacions.</p>
+
+<h2>Base legal i conservació</h2>
+<p>El tractament es basa en el teu <strong>consentiment</strong>, que dones en concedir els permisos d'ubicació i de notificacions, i que pots retirar en qualsevol moment des de la configuració d'Android o des de la mateixa aplicació. En el cas de la publicitat personalitzada, el consentiment es recull mitjançant el formulari de Google (UMP).</p>
+<p>Els registres tècnics del servidor amb adreces IP es conserven el temps que Google Cloud els manté per defecte (30 dies) i després s'eliminen automàticament. Les dades que es desen al teu telèfon hi romanen fins que desinstal·lis l'aplicació o n'esborris les dades.</p>
+
+<h2>Els teus drets</h2>
+<p>Si resideixes a la Unió Europea, el RGPD et reconeix els drets d'accés, rectificació, supressió, limitació, portabilitat i oposició. A la pràctica, i atès que aquesta aplicació no desa cap dada associada a la teva persona:</p>
+<ul>
+  <li><strong>Supressió:</strong> desinstal·lar l'aplicació esborra tot el que desa de tu. No cal demanar res a ningú.</li>
+  <li><strong>Oposició i retirada del consentiment:</strong> revoca el permís d'ubicació o desactiva els avisos des de la configuració d'Android.</li>
+  <li><strong>Accés:</strong> pots escriure a l'adreça de contacte. Tingues en compte que, com que no hi ha comptes ni identificadors d'usuari, no hi ha cap manera tècnica de localitzar al servidor unes dades «teves».</li>
+</ul>
+<p>També pots presentar una reclamació davant l'autoritat de control del teu país. A Espanya és l'<a href="https://www.aepd.es">Agencia Española de Protección de Datos</a>.</p>
+
+<h2>Menors</h2>
+<p>Aquesta aplicació no està adreçada a menors de 13 anys i no en recull dades conscientment.</p>
+
+<h2>Canvis en aquesta política</h2>
+<p>Si aquesta política canvia de manera substancial, es publicarà la versió nova en aquesta mateixa adreça amb una data d'actualització diferent, i l'aplicació mostrarà l'avís corresponent.</p>
+
+<h2>Advertiment important sobre el servei</h2>
+<p>Aquesta aplicació <strong>no és un sistema oficial d'alerta primerenca</strong>. Els avisos arriben quan el terratrèmol ja ha passat i una agència sismològica l'ha publicat. Les dades són preliminars i es poden revisar o retirar. No substitueix les indicacions de Protecció Civil ni dels serveis d'emergència.</p>
+
+<footer>
+<p>Tembló · JR Soft (Javier Román Sáez) · <code>com.jrsoft.terremotos</code> · Contacte: <strong><a href="mailto:demual@gmail.com">demual@gmail.com</a></strong></p>
+</footer>
+
+</body>
+</html>

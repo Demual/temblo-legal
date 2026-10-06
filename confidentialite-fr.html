@@ -1,0 +1,152 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Politique de confidentialité · Tembló</title>
+<style>
+  :root { color-scheme: light dark; }
+  body {
+    font: 17px/1.65 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+    max-width: 46rem; margin: 0 auto; padding: 2rem 1.25rem 5rem;
+    color: #1a1c19; background: #f7fbf1;
+  }
+  @media (prefers-color-scheme: dark) {
+    body { color: #e2e3dd; background: #10140f; }
+    td, th { border-color: #333 !important; }
+  }
+  h1 { font-size: 1.9rem; line-height: 1.2; margin-bottom: .25rem; }
+  h2 { font-size: 1.25rem; margin-top: 2.5rem; color: #2e7d32; }
+  @media (prefers-color-scheme: dark) { h2 { color: #8fcf93; } }
+  .fecha { opacity: .7; font-size: .9rem; }
+  .clave { border-left: 4px solid #2e7d32; padding: .5rem 0 .5rem 1rem; margin: 1.5rem 0; }
+  table { border-collapse: collapse; width: 100%; margin: 1rem 0; font-size: .95rem; }
+  th, td { text-align: left; padding: .6rem .5rem; border-bottom: 1px solid #ddd; vertical-align: top; }
+  th { font-weight: 600; }
+  code { background: rgba(127,127,127,.15); padding: .1rem .3rem; border-radius: 3px; font-size: .9em; }
+  footer { margin-top: 3rem; font-size: .9rem; opacity: .75; }
+</style>
+</head>
+<body>
+<h1>Politique de confidentialité</h1>
+<p class="fecha">Application <strong>Tembló</strong> (<code>com.jrsoft.terremotos</code>) · Dernière mise à jour : 1er octobre 2026</p>
+
+<div class="clave">
+<p><strong>En une phrase :</strong> cette application n'a pas de comptes utilisateur, n'enregistre pas qui vous êtes et n'envoie pas votre position à ses serveurs. Votre position est utilisée <em>à l'intérieur du téléphone</em> pour calculer à quelle distance les séismes ont eu lieu.</p>
+</div>
+
+<h2>Responsable du traitement</h2>
+<p>Le responsable du traitement est <strong>JR Soft</strong>, nom commercial de <strong>Javier Román Sáez</strong>, développeur de l'application Tembló. Vous pouvez le contacter à l'adresse <strong><a href="mailto:demual@gmail.com">demual@gmail.com</a></strong>.</p>
+
+<h2>Ce que cette application NE fait PAS</h2>
+<ul>
+  <li>Il n'y a ni inscription, ni compte, ni identifiant, ni mot de passe. On ne vous demande jamais d'adresse e-mail, de numéro de téléphone ni de nom.</li>
+  <li>Aucun outil d'analyse ni de statistiques d'utilisation n'est employé. Il n'y a ni Google Analytics, ni Firebase Analytics, ni rapports de plantage.</li>
+  <li>Aucune donnée n'est vendue, louée ni cédée à des tiers à des fins commerciales.</li>
+  <li><strong>Votre position n'est jamais envoyée aux serveurs de cette application.</strong> L'application télécharge la liste des séismes du monde entier et effectue tous les calculs de distance et tous les filtres dans votre téléphone. Le serveur ne sait pas où vous êtes, ni quelle zone de la carte vous regardez, ni quels séismes vous intéressent.</li>
+</ul>
+
+<h2>Données qui restent uniquement sur votre téléphone</h2>
+<p>Ces informations sont conservées dans le stockage privé de l'application et n'en sortent pas. Elles disparaissent entièrement si vous désinstallez l'application ou si vous effacez ses données depuis les paramètres d'Android.</p>
+<ul>
+  <li>Vos filtres : magnitude, période, profondeur, type d'événement et critère de tri.</li>
+  <li>Vos réglages : thème, langue et unités.</li>
+  <li>Les <strong>zones surveillées</strong> que vous avez créées, avec leurs coordonnées, leur rayon et leur seuil de magnitude.</li>
+  <li>Le <strong>point de référence manuel</strong>, si vous l'avez défini.</li>
+  <li>La dernière position de la carte, si vous choisissez que l'application s'ouvre là où vous l'avez laissée.</li>
+  <li>Une copie des derniers séismes téléchargés, pour que l'application fonctionne hors ligne.</li>
+</ul>
+
+<h2>Données qui quittent le téléphone</h2>
+
+<h3>Votre position</h3>
+<p>L'application demande l'autorisation de localisation <strong>uniquement lorsque vous activez une fonction qui en a besoin</strong>, jamais à la première ouverture. Si vous ne l'accordez pas, l'application continue de fonctionner : vous perdez les distances et le tri par proximité, et vous pouvez les retrouver en définissant un point de référence à la main dans les Paramètres.</p>
+<p>La position est utilisée dans le téléphone pour calculer à quelle distance de vous chaque séisme a eu lieu et pour décider si une alerte vous concerne. <strong>Ces coordonnées ne sont envoyées à aucun serveur, pas même au réseau publicitaire.</strong></p>
+<p>Il y a une exception qu'il vaut la peine de bien comprendre. Si vous activez les alertes, le téléphone s'abonne au service de notifications de Google (Firebase Cloud Messaging) à l'aide d'identifiants qui représentent des <strong>cellules de 5 degrés</strong> de la planète, c'est-à-dire des carrés d'environ 550 km de côté. Google reçoit ces abonnements. Cela signifie que Google peut savoir dans quel carré de 550 km vous avez une zone surveillée, mais pas votre position : le carré est délibérément immense, et c'est précisément la raison de ce choix.</p>
+
+<h3>Adresse IP</h3>
+<p>Comme pour toute application qui se connecte à Internet, les serveurs avec lesquels l'application communique reçoivent votre adresse IP. C'est le cas pour :</p>
+<ul>
+  <li>Le serveur de cette application, qui fournit la liste des séismes.</li>
+  <li>L'<strong>USGS</strong> (<em>United States Geological Survey</em>), consulté directement en secours si le serveur principal ne répond pas.</li>
+  <li><strong>Google Maps</strong>, qui fournit les images de la carte.</li>
+  <li><strong>Firebase Cloud Messaging</strong>, de Google, qui distribue les alertes.</li>
+  <li><strong>Firebase Remote Config</strong>, de Google, qui indique à l'application où et à quelle fréquence afficher des annonces.</li>
+</ul>
+<p>L'adresse IP figure dans les journaux techniques du serveur de cette application, qui servent à diagnostiquer les erreurs et à détecter les abus. Elle n'est croisée avec aucune autre donnée, car il n'y a aucune autre donnée avec laquelle la croiser : les requêtes ne portent aucun identifiant d'utilisateur ni d'appareil.</p>
+
+<h3>Identifiant de notifications</h3>
+<p>Si vous activez les alertes, Firebase Cloud Messaging attribue à votre installation un identifiant propre pour pouvoir distribuer les messages. C'est un identifiant de l'appareil, pas le vôtre, et il est renouvelé si vous désinstallez puis réinstallez l'application. Désactiver les alertes dans l'application annule les abonnements.</p>
+
+<h3>Configuration à distance de la publicité</h3>
+<p>Pour pouvoir ajuster ou retirer la publicité sans publier de nouvelle version (par exemple après un séisme grave), l'application demande à <strong>Firebase Remote Config</strong>, de Google, où et à quelle fréquence afficher des annonces. Cette requête porte un identifiant d'installation généré par Firebase, mais aucune donnée vous concernant ni votre position.</p>
+
+<h3>Identifiant publicitaire</h3>
+<p>L'application intègre le SDK publicitaire de Google (AdMob) et déclare donc l'autorisation <code>com.google.android.gms.permission.AD_ID</code>, qui donne accès à l'identifiant publicitaire d'Android. Cet identifiant peut être réinitialisé et supprimé depuis <em>Paramètres d'Android → Google → Annonces</em>.</p>
+<p>Dans les pays de l'Espace économique européen et au Royaume-Uni, l'application affiche le formulaire de consentement de Google (UMP) avant de diffuser de la publicité personnalisée. Vous pouvez modifier votre choix à tout moment depuis les paramètres de l'application.</p>
+<p>Ce formulaire mentionne la <strong>géolocalisation précise</strong> parmi les finalités que les partenaires publicitaires peuvent demander, et il convient d'être exact sur ce que cela signifie. <strong>Cette application ne transmet pas vos coordonnées au SDK publicitaire</strong> : la demande d'annonce part sans aucune donnée de localisation. Ce que le formulaire vous demande, c'est si vous consentez à ce que Google et les partenaires qui y sont énumérés traitent des données pour ces finalités, selon leurs propres politiques et par leurs propres moyens. Si vous refusez, vous verrez de la publicité non personnalisée et l'application fonctionnera exactement de la même façon.</p>
+
+<h2>Tiers concernés</h2>
+<table>
+  <tr><th>Service</th><th>Finalité</th><th>Sa politique</th></tr>
+  <tr>
+    <td>Google Firebase Cloud Messaging</td>
+    <td>Distribuer les alertes de séisme</td>
+    <td><a href="https://firebase.google.com/support/privacy">firebase.google.com/support/privacy</a></td>
+  </tr>
+  <tr>
+    <td>Google Maps</td>
+    <td>Dessiner la carte</td>
+    <td><a href="https://policies.google.com/privacy">policies.google.com/privacy</a></td>
+  </tr>
+  <tr>
+    <td>Google AdMob</td>
+    <td>Publicité</td>
+    <td><a href="https://policies.google.com/technologies/ads">policies.google.com/technologies/ads</a></td>
+  </tr>
+  <tr>
+    <td>Google Firebase Remote Config</td>
+    <td>Ajuster ou retirer la publicité sans publier de nouvelle version</td>
+    <td><a href="https://firebase.google.com/support/privacy">firebase.google.com/support/privacy</a></td>
+  </tr>
+  <tr>
+    <td>USGS</td>
+    <td>Données sismiques (source publique)</td>
+    <td><a href="https://www.usgs.gov/policies/privacy-policy">usgs.gov/policies/privacy-policy</a></td>
+  </tr>
+  <tr>
+    <td>EMSC</td>
+    <td>Données sismiques (via notre serveur)</td>
+    <td><a href="https://www.emsc-csem.org/">emsc-csem.org</a></td>
+  </tr>
+</table>
+<p>Les données sismiques affichées par l'application proviennent de l'USGS et de l'EMSC. Cette application n'est affiliée à aucune de ces deux organisations.</p>
+
+<h2>Base légale et conservation</h2>
+<p>Le traitement repose sur votre <strong>consentement</strong>, que vous donnez en accordant les autorisations de localisation et de notifications, et que vous pouvez retirer à tout moment depuis les paramètres d'Android ou depuis l'application elle-même. Pour la publicité personnalisée, le consentement est recueilli au moyen du formulaire de Google (UMP).</p>
+<p>Les journaux techniques du serveur contenant des adresses IP sont conservés pendant la durée fixée par défaut par Google Cloud (30 jours), puis supprimés automatiquement. Les données conservées sur votre téléphone y restent jusqu'à ce que vous désinstalliez l'application ou effaciez ses données.</p>
+
+<h2>Vos droits</h2>
+<p>Si vous résidez dans l'Union européenne, le RGPD vous reconnaît les droits d'accès, de rectification, d'effacement, de limitation, de portabilité et d'opposition. En pratique, et puisque cette application ne conserve aucune donnée liée à votre personne :</p>
+<ul>
+  <li><strong>Effacement :</strong> désinstaller l'application supprime tout ce qu'elle conserve sur vous. Inutile de le demander à qui que ce soit.</li>
+  <li><strong>Opposition et retrait du consentement :</strong> révoquez l'autorisation de localisation ou désactivez les alertes depuis les paramètres d'Android.</li>
+  <li><strong>Accès :</strong> vous pouvez écrire à l'adresse de contact. Notez qu'en l'absence de comptes et d'identifiants d'utilisateur, il n'existe aucun moyen technique de retrouver sur le serveur des données « vous concernant ».</li>
+</ul>
+<p>Vous pouvez également introduire une réclamation auprès de l'autorité de contrôle de votre pays. En France, il s'agit de la <a href="https://www.cnil.fr">CNIL</a> ; en Belgique, de l'<a href="https://www.autoriteprotectiondonnees.be">Autorité de protection des données</a> ; en Espagne, pays du responsable du traitement, de l'<a href="https://www.aepd.es">Agencia Española de Protección de Datos</a>.</p>
+
+<h2>Mineurs</h2>
+<p>Cette application ne s'adresse pas aux moins de 13 ans et ne collecte pas sciemment de données les concernant.</p>
+
+<h2>Modifications de cette politique</h2>
+<p>Si cette politique change de manière substantielle, la nouvelle version sera publiée à cette même adresse avec une date de mise à jour différente, et l'application affichera l'avis correspondant.</p>
+
+<h2>Avertissement important sur le service</h2>
+<p>Cette application <strong>n'est pas un système officiel d'alerte précoce</strong>. Les alertes arrivent quand le séisme a déjà eu lieu et qu'une agence sismologique l'a publié. Les données sont préliminaires et peuvent être révisées ou retirées. Elle ne remplace pas les consignes de la protection civile ni des services de secours.</p>
+
+<footer>
+<p>Tembló · JR Soft (Javier Román Sáez) · <code>com.jrsoft.terremotos</code> · Contact : <strong><a href="mailto:demual@gmail.com">demual@gmail.com</a></strong></p>
+</footer>
+
+</body>
+</html>

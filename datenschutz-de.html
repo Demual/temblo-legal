@@ -1,0 +1,152 @@
+<!doctype html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Datenschutzerklärung · Tembló</title>
+<style>
+  :root { color-scheme: light dark; }
+  body {
+    font: 17px/1.65 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+    max-width: 46rem; margin: 0 auto; padding: 2rem 1.25rem 5rem;
+    color: #1a1c19; background: #f7fbf1;
+  }
+  @media (prefers-color-scheme: dark) {
+    body { color: #e2e3dd; background: #10140f; }
+    td, th { border-color: #333 !important; }
+  }
+  h1 { font-size: 1.9rem; line-height: 1.2; margin-bottom: .25rem; }
+  h2 { font-size: 1.25rem; margin-top: 2.5rem; color: #2e7d32; }
+  @media (prefers-color-scheme: dark) { h2 { color: #8fcf93; } }
+  .fecha { opacity: .7; font-size: .9rem; }
+  .clave { border-left: 4px solid #2e7d32; padding: .5rem 0 .5rem 1rem; margin: 1.5rem 0; }
+  table { border-collapse: collapse; width: 100%; margin: 1rem 0; font-size: .95rem; }
+  th, td { text-align: left; padding: .6rem .5rem; border-bottom: 1px solid #ddd; vertical-align: top; }
+  th { font-weight: 600; }
+  code { background: rgba(127,127,127,.15); padding: .1rem .3rem; border-radius: 3px; font-size: .9em; }
+  footer { margin-top: 3rem; font-size: .9rem; opacity: .75; }
+</style>
+</head>
+<body>
+<h1>Datenschutzerklärung</h1>
+<p class="fecha">App <strong>Tembló</strong> (<code>com.jrsoft.terremotos</code>) · Zuletzt aktualisiert: 1. Oktober 2026</p>
+
+<div class="clave">
+<p><strong>In einem Satz:</strong> Diese App hat keine Benutzerkonten, erfasst nicht, wer Sie sind, und sendet Ihren Standort nicht an ihre Server. Ihr Standort wird <em>im Telefon</em> verwendet, um zu berechnen, wie weit entfernt sich Erdbeben ereignet haben.</p>
+</div>
+
+<h2>Verantwortlicher</h2>
+<p>Verantwortlicher für die Verarbeitung ist <strong>JR Soft</strong>, Handelsname von <strong>Javier Román Sáez</strong>, Entwickler der App Tembló. Kontakt: <strong><a href="mailto:demual@gmail.com">demual@gmail.com</a></strong>.</p>
+
+<h2>Was diese App NICHT tut</h2>
+<ul>
+  <li>Es gibt keine Registrierung, kein Konto, keinen Benutzernamen und kein Passwort. Sie werden nie nach einer E-Mail-Adresse, einer Telefonnummer oder einem Namen gefragt.</li>
+  <li>Es werden keine Analyse- oder Nutzungsstatistik-Werkzeuge verwendet. Es gibt kein Google Analytics, kein Firebase Analytics und keine Absturzberichte.</li>
+  <li>Es werden keine Daten an Dritte verkauft, vermietet oder zu kommerziellen Zwecken weitergegeben.</li>
+  <li><strong>Ihr Standort wird niemals an die Server dieser App gesendet.</strong> Die App lädt die Liste der Erdbeben auf der ganzen Welt herunter und führt alle Entfernungsberechnungen und alle Filter in Ihrem Telefon aus. Der Server weiß nicht, wo Sie sind, welchen Kartenausschnitt Sie betrachten oder welche Erdbeben Sie interessieren.</li>
+</ul>
+
+<h2>Daten, die nur auf Ihrem Telefon bleiben</h2>
+<p>Diese Informationen werden im privaten Speicher der App abgelegt und verlassen ihn nicht. Sie verschwinden vollständig, wenn Sie die App deinstallieren oder ihre Daten in den Android-Einstellungen löschen.</p>
+<ul>
+  <li>Ihre Filter: Magnitude, Zeitraum, Tiefe, Ereignistyp und Sortierung.</li>
+  <li>Ihre Einstellungen: Design, Sprache und Einheiten.</li>
+  <li>Die <strong>überwachten Gebiete</strong>, die Sie angelegt haben, mit ihren Koordinaten, ihrem Radius und ihrer Magnitudenschwelle.</li>
+  <li>Der <strong>manuelle Bezugspunkt</strong>, falls Sie einen festgelegt haben.</li>
+  <li>Die letzte Kartenposition, falls Sie möchten, dass die App dort öffnet, wo Sie aufgehört haben.</li>
+  <li>Eine Kopie der zuletzt heruntergeladenen Erdbeben, damit die App auch offline funktioniert.</li>
+</ul>
+
+<h2>Daten, die das Telefon verlassen</h2>
+
+<h3>Ihr Standort</h3>
+<p>Die App fragt die Standortberechtigung <strong>nur dann an, wenn Sie eine Funktion aktivieren, die sie benötigt</strong>, niemals beim ersten Öffnen. Wenn Sie sie nicht erteilen, funktioniert die App weiter: Sie verlieren die Entfernungen und die Sortierung nach Nähe und können beides zurückbekommen, indem Sie in den Einstellungen von Hand einen Bezugspunkt festlegen.</p>
+<p>Der Standort wird im Telefon verwendet, um zu berechnen, wie weit jedes Erdbeben von Ihnen entfernt war, und um zu entscheiden, ob eine Warnung Sie betrifft. <strong>Diese Koordinaten werden an keinen Server gesendet, auch nicht an das Werbenetzwerk.</strong></p>
+<p>Es gibt eine Ausnahme, die man genau verstehen sollte. Wenn Sie die Warnungen aktivieren, abonniert das Telefon den Benachrichtigungsdienst von Google (Firebase Cloud Messaging) mit Kennungen, die <strong>Zellen von 5 Grad</strong> der Erde darstellen, also Quadrate von etwa 550 km Seitenlänge. Google erhält diese Abonnements. Das bedeutet, dass Google wissen kann, in welchem 550-km-Quadrat Sie ein überwachtes Gebiet haben, nicht aber Ihren Standort: Das Quadrat ist absichtlich riesig, und genau das ist der Grund für diese Gestaltung.</p>
+
+<h3>IP-Adresse</h3>
+<p>Wie bei jeder App, die sich mit dem Internet verbindet, erhalten die Server, mit denen die App kommuniziert, Ihre IP-Adresse. Das betrifft:</p>
+<ul>
+  <li>Den Server dieser App, der die Liste der Erdbeben bereitstellt.</li>
+  <li>Den <strong>USGS</strong> (<em>United States Geological Survey</em>), der direkt als Ersatz abgefragt wird, wenn der Hauptserver nicht antwortet.</li>
+  <li><strong>Google Maps</strong>, das die Kartenbilder liefert.</li>
+  <li><strong>Firebase Cloud Messaging</strong> von Google, das die Warnungen zustellt.</li>
+  <li><strong>Firebase Remote Config</strong> von Google, das der App mitteilt, wo und wie oft Werbung angezeigt wird.</li>
+</ul>
+<p>Die IP-Adresse wird in den technischen Protokollen des Servers dieser App gespeichert, die der Fehlerdiagnose und der Erkennung von Missbrauch dienen. Sie wird mit keinen anderen Daten verknüpft, weil es keine anderen Daten gibt, mit denen sie verknüpft werden könnte: Die Anfragen enthalten weder eine Benutzer- noch eine Gerätekennung.</p>
+
+<h3>Benachrichtigungskennung</h3>
+<p>Wenn Sie die Warnungen aktivieren, weist Firebase Cloud Messaging Ihrer Installation eine eigene Kennung zu, um die Nachrichten zustellen zu können. Es ist eine Kennung des Geräts, nicht Ihre, und sie wird erneuert, wenn Sie die App deinstallieren und neu installieren. Das Deaktivieren der Warnungen in der App beendet die Abonnements.</p>
+
+<h3>Fernkonfiguration der Werbung</h3>
+<p>Um die Werbung anpassen oder entfernen zu können, ohne eine neue Version zu veröffentlichen (zum Beispiel nach einem schweren Erdbeben), fragt die App bei <strong>Firebase Remote Config</strong> von Google ab, wo und wie oft Werbung angezeigt wird. Diese Anfrage enthält eine von Firebase erzeugte Installationskennung, aber keine Daten über Sie und nicht Ihren Standort.</p>
+
+<h3>Werbe-ID</h3>
+<p>Die App enthält das Werbe-SDK von Google (AdMob) und deklariert daher die Berechtigung <code>com.google.android.gms.permission.AD_ID</code>, die Zugriff auf die Android-Werbe-ID gewährt. Diese Kennung können Sie unter <em>Android-Einstellungen → Google → Werbung</em> zurücksetzen und löschen.</p>
+<p>In den Ländern des Europäischen Wirtschaftsraums und im Vereinigten Königreich zeigt die App das Einwilligungsformular von Google (UMP) an, bevor personalisierte Werbung ausgeliefert wird. Sie können Ihre Entscheidung jederzeit in den Einstellungen der App ändern.</p>
+<p>Dieses Formular nennt die <strong>genaue Standortbestimmung</strong> unter den Zwecken, die Werbepartner anfragen können, und es lohnt sich, genau zu sein, was das bedeutet. <strong>Diese App übergibt Ihre Koordinaten nicht an das Werbe-SDK</strong>: Die Anzeigenanfrage wird ohne jegliche Standortdaten gesendet. Das Formular fragt Sie, ob Sie einwilligen, dass Google und die dort aufgeführten Partner Daten für diese Zwecke verarbeiten, nach ihren eigenen Richtlinien und mit ihren eigenen Mitteln. Wenn Sie ablehnen, sehen Sie nicht personalisierte Werbung, und die App funktioniert genau gleich.</p>
+
+<h2>Beteiligte Dritte</h2>
+<table>
+  <tr><th>Dienst</th><th>Wofür</th><th>Datenschutzerklärung</th></tr>
+  <tr>
+    <td>Google Firebase Cloud Messaging</td>
+    <td>Zustellung der Erdbebenwarnungen</td>
+    <td><a href="https://firebase.google.com/support/privacy">firebase.google.com/support/privacy</a></td>
+  </tr>
+  <tr>
+    <td>Google Maps</td>
+    <td>Darstellung der Karte</td>
+    <td><a href="https://policies.google.com/privacy">policies.google.com/privacy</a></td>
+  </tr>
+  <tr>
+    <td>Google AdMob</td>
+    <td>Werbung</td>
+    <td><a href="https://policies.google.com/technologies/ads">policies.google.com/technologies/ads</a></td>
+  </tr>
+  <tr>
+    <td>Google Firebase Remote Config</td>
+    <td>Werbung anpassen oder entfernen, ohne eine neue Version zu veröffentlichen</td>
+    <td><a href="https://firebase.google.com/support/privacy">firebase.google.com/support/privacy</a></td>
+  </tr>
+  <tr>
+    <td>USGS</td>
+    <td>Seismische Daten (öffentliche Quelle)</td>
+    <td><a href="https://www.usgs.gov/policies/privacy-policy">usgs.gov/policies/privacy-policy</a></td>
+  </tr>
+  <tr>
+    <td>EMSC</td>
+    <td>Seismische Daten (über unseren Server)</td>
+    <td><a href="https://www.emsc-csem.org/">emsc-csem.org</a></td>
+  </tr>
+</table>
+<p>Die seismischen Daten, die die App anzeigt, stammen vom USGS und vom EMSC. Diese App ist mit keiner der beiden Organisationen verbunden.</p>
+
+<h2>Rechtsgrundlage und Speicherdauer</h2>
+<p>Die Verarbeitung beruht auf Ihrer <strong>Einwilligung</strong>, die Sie durch das Erteilen der Standort- und Benachrichtigungsberechtigung geben und jederzeit in den Android-Einstellungen oder in der App selbst widerrufen können. Für personalisierte Werbung wird die Einwilligung über das Formular von Google (UMP) eingeholt.</p>
+<p>Die technischen Serverprotokolle mit IP-Adressen werden so lange aufbewahrt, wie Google Cloud sie standardmäßig vorhält (30 Tage), und anschließend automatisch gelöscht. Die auf Ihrem Telefon gespeicherten Daten bleiben dort, bis Sie die App deinstallieren oder ihre Daten löschen.</p>
+
+<h2>Ihre Rechte</h2>
+<p>Wenn Sie in der Europäischen Union wohnen, gewährt Ihnen die DSGVO die Rechte auf Auskunft, Berichtigung, Löschung, Einschränkung, Datenübertragbarkeit und Widerspruch. In der Praxis, und da diese App keine Daten speichert, die Ihrer Person zugeordnet sind:</p>
+<ul>
+  <li><strong>Löschung:</strong> Das Deinstallieren der App löscht alles, was sie über Sie speichert. Sie müssen niemanden darum bitten.</li>
+  <li><strong>Widerspruch und Widerruf der Einwilligung:</strong> Entziehen Sie die Standortberechtigung oder deaktivieren Sie die Warnungen in den Android-Einstellungen.</li>
+  <li><strong>Auskunft:</strong> Sie können an die Kontaktadresse schreiben. Bitte beachten Sie, dass es mangels Konten und Benutzerkennungen technisch keine Möglichkeit gibt, auf dem Server Daten „über Sie“ zu finden.</li>
+</ul>
+<p>Sie können sich außerdem bei der Datenschutz-Aufsichtsbehörde Ihres Landes beschweren. Eine Übersicht der Aufsichtsbehörden in der EU finden Sie beim <a href="https://www.edpb.europa.eu/about-edpb/about-edpb/members_de">Europäischen Datenschutzausschuss</a>. In Spanien, dem Land des Verantwortlichen, ist es die <a href="https://www.aepd.es">Agencia Española de Protección de Datos</a>.</p>
+
+<h2>Minderjährige</h2>
+<p>Diese App richtet sich nicht an Kinder unter 13 Jahren und erhebt wissentlich keine Daten von ihnen.</p>
+
+<h2>Änderungen dieser Erklärung</h2>
+<p>Wenn sich diese Erklärung wesentlich ändert, wird die neue Fassung unter derselben Adresse mit einem neuen Aktualisierungsdatum veröffentlicht, und die App zeigt einen entsprechenden Hinweis an.</p>
+
+<h2>Wichtiger Hinweis zum Dienst</h2>
+<p>Diese App ist <strong>kein offizielles Frühwarnsystem</strong>. Die Warnungen kommen an, wenn das Erdbeben bereits stattgefunden und ein seismologisches Institut es veröffentlicht hat. Die Daten sind vorläufig und können überarbeitet oder zurückgezogen werden. Sie ersetzt nicht die Anweisungen des Katastrophenschutzes oder der Rettungsdienste.</p>
+
+<footer>
+<p>Tembló · JR Soft (Javier Román Sáez) · <code>com.jrsoft.terremotos</code> · Kontakt: <strong><a href="mailto:demual@gmail.com">demual@gmail.com</a></strong></p>
+</footer>
+
+</body>
+</html>
