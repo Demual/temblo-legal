@@ -30,7 +30,7 @@
 <body>
 
 <h1>Política de privacidad</h1>
-<p class="fecha">Aplicación <strong>Tembló</strong> (<code>com.jrsoft.terremotos</code>) · Última actualización: 20 de agosto de 2026</p>
+<p class="fecha">Aplicación <strong>Tembló</strong> (<code>com.jrsoft.terremotos</code>) · Última actualización: 1 de octubre de 2026</p>
 
 <div class="clave">
 <p><strong>En una frase:</strong> esta aplicación no tiene cuentas de usuario, no registra quién eres y no envía tu ubicación a sus servidores. Tu ubicación se usa <em>dentro del teléfono</em> para calcular a qué distancia han ocurrido los terremotos.</p>
@@ -72,11 +72,15 @@
   <li><strong>USGS</strong> (<em>United States Geological Survey</em>), que se consulta directamente como respaldo si el servidor principal no responde.</li>
   <li><strong>Google Maps</strong>, que sirve las imágenes del mapa.</li>
   <li><strong>Firebase Cloud Messaging</strong>, de Google, que entrega los avisos.</li>
+  <li><strong>Firebase Remote Config</strong>, de Google, que le dice a la app dónde y con qué frecuencia mostrar anuncios.</li>
 </ul>
 <p>La dirección IP queda en los registros técnicos del servidor de esta aplicación, que sirven para diagnosticar errores y detectar abusos. No se cruza con ningún otro dato porque no hay ningún otro dato con el que cruzarla: las peticiones no llevan identificador de usuario ni de dispositivo.</p>
 
 <h3>Identificador de notificaciones</h3>
 <p>Si activas los avisos, Firebase Cloud Messaging asigna a tu instalación un identificador propio para poder entregar los mensajes. Es un identificador del dispositivo, no tuyo, y se renueva si desinstalas y reinstalas la aplicación. Desactivar los avisos en la app cancela las suscripciones.</p>
+
+<h3>Configuración remota de la publicidad</h3>
+<p>Para poder ajustar o retirar la publicidad sin publicar una versión nueva (por ejemplo, después de un terremoto grave), la aplicación consulta a <strong>Firebase Remote Config</strong>, de Google, dónde y con qué frecuencia mostrar anuncios. Esa consulta lleva un identificador de la instalación que genera Firebase, pero ningún dato tuyo ni tu ubicación.</p>
 
 <h3>Identificador de publicidad</h3>
 <p>La aplicación incluye el SDK de publicidad de Google (AdMob) y, por tanto, declara el permiso <code>com.google.android.gms.permission.AD_ID</code>, que da acceso al identificador de publicidad de Android. Este identificador es reiniciable y borrable desde <em>Ajustes de Android → Google → Anuncios</em>.</p>
@@ -100,6 +104,11 @@
     <td>Google AdMob</td>
     <td>Publicidad</td>
     <td><a href="https://policies.google.com/technologies/ads">policies.google.com/technologies/ads</a></td>
+  </tr>
+  <tr>
+    <td>Google Firebase Remote Config</td>
+    <td>Ajustar o retirar la publicidad sin publicar una versión nueva</td>
+    <td><a href="https://firebase.google.com/support/privacy">firebase.google.com/support/privacy</a></td>
   </tr>
   <tr>
     <td>USGS</td>
