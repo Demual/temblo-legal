@@ -29,7 +29,7 @@
 </head>
 <body>
 <h1>Política de privadesa</h1>
-<p class="fecha">Aplicació <strong>Tembló</strong> (<code>com.jrsoft.terremotos</code>) · Darrera actualització: 1 d'octubre de 2026</p>
+<p class="fecha">Aplicació <strong>Tembló</strong> (<code>com.jrsoft.terremotos</code>) · Darrera actualització: 14 d'octubre de 2026</p>
 <p class="fecha">Aquesta és una traducció de la <a href="privacidad-es.html">versió en castellà</a>. En cas de discrepància, preval la versió en castellà.</p>
 
 <div class="clave">
@@ -42,7 +42,7 @@
 <h2>El que aquesta aplicació NO fa</h2>
 <ul>
   <li>No hi ha registre, compte, usuari ni contrasenya. Mai no se't demana un correu, un telèfon ni un nom.</li>
-  <li>No es fa servir cap eina d'analítica ni d'estadístiques d'ús. No hi ha Google Analytics, ni Firebase Analytics, ni informes d'errors.</li>
+  <li>No es fa servir cap eina pròpia d'analítica ni d'informes d'errors: no hi ha Google Analytics, ni Firebase Analytics, ni Crashlytics. Els SDK de Google que porta l'aplicació (AdMob i Google Maps) recullen pel seu compte dades tècniques i de diagnòstic i, en el cas d'AdMob, les interaccions amb els anuncis, per a publicitat, mesurament, prevenció del frau i millora dels seus serveis, segons les seves pròpies polítiques.</li>
   <li>No es venen, lloguen ni cedeixen dades a tercers amb finalitats comercials.</li>
   <li><strong>La teva ubicació no s'envia mai als servidors d'aquesta aplicació.</strong> L'aplicació baixa la llista de terratrèmols de tot el món i fa tots els càlculs de distància i tots els filtres dins del teu telèfon. El servidor no sap on ets, ni quina zona del mapa mires, ni quins sismes t'interessen.</li>
 </ul>
@@ -56,6 +56,7 @@
   <li>El <strong>punt de referència manual</strong>, si l'has definit.</li>
   <li>La darrera posició del mapa, si tries que l'aplicació s'obri on la vas deixar.</li>
   <li>Una còpia dels darrers terratrèmols baixats, perquè l'aplicació funcioni sense connexió.</li>
+  <li>El país de la teva targeta SIM (o, si no n'hi ha, el de la regió del sistema), que la pantalla «Més aplicacions de JR Soft» consulta en el moment per mostrar només les aplicacions disponibles al teu país. No es desa ni s'envia. Els enllaços a Google Play d'aquesta pantalla porten una etiqueta que diu que vénen de Tembló, sense cap dada teva.</li>
 </ul>
 
 <h2>Dades que sí que surten del telèfon</h2>
@@ -77,14 +78,14 @@
 <p>L'adreça IP queda als registres tècnics del servidor d'aquesta aplicació, que serveixen per diagnosticar errors i detectar abusos. No es creua amb cap altra dada perquè no hi ha cap altra dada amb què creuar-la: les peticions no porten identificador d'usuari ni de dispositiu.</p>
 
 <h3>Identificador de notificacions</h3>
-<p>Si actives els avisos, Firebase Cloud Messaging assigna a la teva instal·lació un identificador propi per poder lliurar els missatges. És un identificador del dispositiu, no teu, i es renova si desinstal·les i tornes a instal·lar l'aplicació. Desactivar els avisos a l'aplicació cancel·la les subscripcions.</p>
+<p>Si actives els avisos, Firebase Cloud Messaging assigna a la teva instal·lació un identificador propi per poder lliurar els missatges. És un identificador del dispositiu, no teu, i es renova si desinstal·les i tornes a instal·lar l'aplicació. Desactivar els avisos a l'aplicació cancel·la les subscripcions. Firebase conserva aquest identificador fins que s'esborra i, després, fins a 180 dies a les seves còpies de seguretat.</p>
 
 <h3>Configuració remota de la publicitat</h3>
 <p>Per poder ajustar o retirar la publicitat sense publicar una versió nova (per exemple, després d'un terratrèmol greu), l'aplicació consulta <strong>Firebase Remote Config</strong>, de Google, on i amb quina freqüència ha de mostrar anuncis. Aquesta consulta porta un identificador de la instal·lació que genera Firebase, però cap dada teva ni la teva ubicació.</p>
 
 <h3>Identificador de publicitat</h3>
 <p>L'aplicació inclou l'SDK de publicitat de Google (AdMob) i, per tant, declara el permís <code>com.google.android.gms.permission.AD_ID</code>, que dona accés a l'identificador de publicitat d'Android. Aquest identificador es pot restablir i esborrar des de <em>Configuració d'Android → Google → Anuncis</em>.</p>
-<p>Als països de l'Espai Econòmic Europeu i al Regne Unit, l'aplicació mostrarà el formulari de consentiment de Google (UMP) abans de servir publicitat personalitzada. Pots canviar la teva elecció en qualsevol moment des de la configuració de l'aplicació.</p>
+<p>Als països de l'Espai Econòmic Europeu, al Regne Unit i a Suïssa, l'aplicació mostrarà el formulari de consentiment de Google (UMP) abans de servir publicitat personalitzada. Pots canviar la teva elecció en qualsevol moment des de la configuració de l'aplicació.</p>
 <p>Aquest formulari esmenta la <strong>geolocalització precisa</strong> entre les finalitats que els proveïdors publicitaris poden sol·licitar, i convé ser exactes sobre què vol dir. <strong>Aquesta aplicació no lliura les teves coordenades a l'SDK de publicitat</strong>: la petició d'anunci surt sense cap dada d'ubicació. El que el formulari et pregunta és si consents que Google i els proveïdors que s'hi enumeren tractin dades per a aquestes finalitats, amb les seves pròpies polítiques i pels seus propis mitjans. Si ho rebutges, veuràs publicitat no personalitzada i l'aplicació funcionarà exactament igual.</p>
 
 <h2>Tercers implicats</h2>
@@ -123,8 +124,11 @@
 </table>
 <p>Les dades sísmiques que mostra l'aplicació procedeixen de l'USGS i l'EMSC. Aquesta aplicació no està afiliada a cap de les dues organitzacions.</p>
 
+<h2>Transferències fora d'Europa</h2>
+<p>Google (Firebase, Google Maps i AdMob) pot tractar dades fora de l'Espai Econòmic Europeu. Google LLC està adherida al Marc de Privadesa de Dades UE-EUA. Si el servidor principal no respon, l'aplicació consulta directament l'USGS, als Estats Units, que rep la teva adreça IP com en qualsevol visita al seu web.</p>
+
 <h2>Base legal i conservació</h2>
-<p>El tractament es basa en el teu <strong>consentiment</strong>, que dones en concedir els permisos d'ubicació i de notificacions, i que pots retirar en qualsevol moment des de la configuració d'Android o des de la mateixa aplicació. En el cas de la publicitat personalitzada, el consentiment es recull mitjançant el formulari de Google (UMP).</p>
+<p>Les funcions que fas servir (els avisos de les teves zones i la configuració de l'aplicació) es basen en la prestació del servei que demanes en fer-la servir (art. 6.1.b del RGPD). Els registres tècnics amb l'adreça IP, en l'interès legítim de mantenir el servei en funcionament i protegir-lo d'abusos (art. 6.1.f). La publicitat personalitzada, en el teu <strong>consentiment</strong>, que es recull amb el formulari de Google (UMP) i que pots retirar quan vulguis des de <em>Configuració → Opcions de privadesa dels anuncis</em>. Els permisos d'ubicació i de notificacions els decideixes tu a Android i els pots treure quan vulguis.</p>
 <p>Els registres tècnics del servidor amb adreces IP es conserven el temps que Google Cloud els manté per defecte (30 dies) i després s'eliminen automàticament. Les dades que es desen al teu telèfon hi romanen fins que desinstal·lis l'aplicació o n'esborris les dades.</p>
 
 <h2>Els teus drets</h2>
@@ -137,10 +141,10 @@
 <p>També pots presentar una reclamació davant l'autoritat de control del teu país. A Espanya és l'<a href="https://www.aepd.es">Agencia Española de Protección de Datos</a>.</p>
 
 <h2>Menors</h2>
-<p>Aquesta aplicació no està adreçada a menors de 13 anys i no en recull dades conscientment.</p>
+<p>Aquesta aplicació no està adreçada a menors de 16 anys i no en recull dades conscientment.</p>
 
 <h2>Canvis en aquesta política</h2>
-<p>Si aquesta política canvia de manera substancial, es publicarà la versió nova en aquesta mateixa adreça amb una data d'actualització diferent, i l'aplicació mostrarà l'avís corresponent.</p>
+<p>Si aquesta política canvia de manera substancial, es publicarà la versió nova en aquesta mateixa adreça amb una altra data d'actualització, i es dirà a les notes de la versió de l'aplicació.</p>
 
 <h2>Advertiment important sobre el servei</h2>
 <p>Aquesta aplicació <strong>no és un sistema oficial d'alerta primerenca</strong>. Els avisos arriben quan el terratrèmol ja ha passat i una agència sismològica l'ha publicat. Les dades són preliminars i es poden revisar o retirar. No substitueix les indicacions de Protecció Civil ni dels serveis d'emergència.</p>

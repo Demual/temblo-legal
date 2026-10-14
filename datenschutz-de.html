@@ -29,7 +29,7 @@
 </head>
 <body>
 <h1>Datenschutzerklärung</h1>
-<p class="fecha">App <strong>Tembló</strong> (<code>com.jrsoft.terremotos</code>) · Zuletzt aktualisiert: 1. Oktober 2026</p>
+<p class="fecha">App <strong>Tembló</strong> (<code>com.jrsoft.terremotos</code>) · Zuletzt aktualisiert: 14. Oktober 2026</p>
 <p class="fecha">Dies ist eine Übersetzung der <a href="privacidad-es.html">spanischen Fassung</a>. Bei Abweichungen ist die spanische Fassung maßgeblich.</p>
 
 <div class="clave">
@@ -42,7 +42,7 @@
 <h2>Was diese App NICHT tut</h2>
 <ul>
   <li>Es gibt keine Registrierung, kein Konto, keinen Benutzernamen und kein Passwort. Sie werden nie nach einer E-Mail-Adresse, einer Telefonnummer oder einem Namen gefragt.</li>
-  <li>Es werden keine Analyse- oder Nutzungsstatistik-Werkzeuge verwendet. Es gibt kein Google Analytics, kein Firebase Analytics und keine Absturzberichte.</li>
+  <li>Es werden keine eigenen Analyse- oder Absturzberichts-Tools verwendet: kein Google Analytics, kein Firebase Analytics und kein Crashlytics. Die Google-SDKs in der App (AdMob und Google Maps) erheben eigenständig technische und Diagnosedaten und, im Fall von AdMob, die Interaktionen mit den Anzeigen – für Werbung, Messung, Betrugsprävention und die Verbesserung ihrer Dienste, nach ihren eigenen Richtlinien.</li>
   <li>Es werden keine Daten an Dritte verkauft, vermietet oder zu kommerziellen Zwecken weitergegeben.</li>
   <li><strong>Ihr Standort wird niemals an die Server dieser App gesendet.</strong> Die App lädt die Liste der Erdbeben auf der ganzen Welt herunter und führt alle Entfernungsberechnungen und alle Filter in Ihrem Telefon aus. Der Server weiß nicht, wo Sie sind, welchen Kartenausschnitt Sie betrachten oder welche Erdbeben Sie interessieren.</li>
 </ul>
@@ -56,6 +56,7 @@
   <li>Der <strong>manuelle Bezugspunkt</strong>, falls Sie einen festgelegt haben.</li>
   <li>Die letzte Kartenposition, falls Sie möchten, dass die App dort öffnet, wo Sie aufgehört haben.</li>
   <li>Eine Kopie der zuletzt heruntergeladenen Erdbeben, damit die App auch offline funktioniert.</li>
+  <li>Das Land Ihrer SIM-Karte (oder, falls keine vorhanden ist, das der Systemregion), das der Bildschirm „Weitere Apps von JR Soft“ in dem Moment abfragt, um nur die in Ihrem Land verfügbaren Apps zu zeigen. Es wird weder gespeichert noch gesendet. Die Google-Play-Links auf diesem Bildschirm tragen eine Kennzeichnung, dass sie von Tembló kommen, ohne Daten über Sie.</li>
 </ul>
 
 <h2>Daten, die das Telefon verlassen</h2>
@@ -77,14 +78,14 @@
 <p>Die IP-Adresse wird in den technischen Protokollen des Servers dieser App gespeichert, die der Fehlerdiagnose und der Erkennung von Missbrauch dienen. Sie wird mit keinen anderen Daten verknüpft, weil es keine anderen Daten gibt, mit denen sie verknüpft werden könnte: Die Anfragen enthalten weder eine Benutzer- noch eine Gerätekennung.</p>
 
 <h3>Benachrichtigungskennung</h3>
-<p>Wenn Sie die Warnungen aktivieren, weist Firebase Cloud Messaging Ihrer Installation eine eigene Kennung zu, um die Nachrichten zustellen zu können. Es ist eine Kennung des Geräts, nicht Ihre, und sie wird erneuert, wenn Sie die App deinstallieren und neu installieren. Das Deaktivieren der Warnungen in der App beendet die Abonnements.</p>
+<p>Wenn Sie die Warnungen aktivieren, weist Firebase Cloud Messaging Ihrer Installation eine eigene Kennung zu, um die Nachrichten zustellen zu können. Es ist eine Kennung des Geräts, nicht Ihre, und sie wird erneuert, wenn Sie die App deinstallieren und neu installieren. Das Deaktivieren der Warnungen in der App beendet die Abonnements. Firebase speichert diese Kennung, bis sie gelöscht wird, und danach bis zu 180 Tage in seinen Sicherungskopien.</p>
 
 <h3>Fernkonfiguration der Werbung</h3>
 <p>Um die Werbung anpassen oder entfernen zu können, ohne eine neue Version zu veröffentlichen (zum Beispiel nach einem schweren Erdbeben), fragt die App bei <strong>Firebase Remote Config</strong> von Google ab, wo und wie oft Werbung angezeigt wird. Diese Anfrage enthält eine von Firebase erzeugte Installationskennung, aber keine Daten über Sie und nicht Ihren Standort.</p>
 
 <h3>Werbe-ID</h3>
 <p>Die App enthält das Werbe-SDK von Google (AdMob) und deklariert daher die Berechtigung <code>com.google.android.gms.permission.AD_ID</code>, die Zugriff auf die Android-Werbe-ID gewährt. Diese Kennung können Sie unter <em>Android-Einstellungen → Google → Werbung</em> zurücksetzen und löschen.</p>
-<p>In den Ländern des Europäischen Wirtschaftsraums und im Vereinigten Königreich zeigt die App das Einwilligungsformular von Google (UMP) an, bevor personalisierte Werbung ausgeliefert wird. Sie können Ihre Entscheidung jederzeit in den Einstellungen der App ändern.</p>
+<p>In den Ländern des Europäischen Wirtschaftsraums, im Vereinigten Königreich und in der Schweiz zeigt die App das Einwilligungsformular von Google (UMP) an, bevor personalisierte Werbung ausgeliefert wird. Sie können Ihre Entscheidung jederzeit in den Einstellungen der App ändern.</p>
 <p>Dieses Formular nennt die <strong>genaue Standortbestimmung</strong> unter den Zwecken, die Werbepartner anfragen können, und es lohnt sich, genau zu sein, was das bedeutet. <strong>Diese App übergibt Ihre Koordinaten nicht an das Werbe-SDK</strong>: Die Anzeigenanfrage wird ohne jegliche Standortdaten gesendet. Das Formular fragt Sie, ob Sie einwilligen, dass Google und die dort aufgeführten Partner Daten für diese Zwecke verarbeiten, nach ihren eigenen Richtlinien und mit ihren eigenen Mitteln. Wenn Sie ablehnen, sehen Sie nicht personalisierte Werbung, und die App funktioniert genau gleich.</p>
 
 <h2>Beteiligte Dritte</h2>
@@ -123,8 +124,11 @@
 </table>
 <p>Die seismischen Daten, die die App anzeigt, stammen vom USGS und vom EMSC. Diese App ist mit keiner der beiden Organisationen verbunden.</p>
 
+<h2>Übermittlungen außerhalb Europas</h2>
+<p>Google (Firebase, Google Maps und AdMob) kann Daten außerhalb des Europäischen Wirtschaftsraums verarbeiten. Google LLC ist nach dem EU-US-Datenschutzrahmen (Data Privacy Framework) zertifiziert. Wenn der Hauptserver nicht antwortet, fragt die App direkt beim USGS in den Vereinigten Staaten an, der Ihre IP-Adresse wie bei jedem Besuch seiner Website erhält.</p>
+
 <h2>Rechtsgrundlage und Speicherdauer</h2>
-<p>Die Verarbeitung beruht auf Ihrer <strong>Einwilligung</strong>, die Sie durch das Erteilen der Standort- und Benachrichtigungsberechtigung geben und jederzeit in den Android-Einstellungen oder in der App selbst widerrufen können. Für personalisierte Werbung wird die Einwilligung über das Formular von Google (UMP) eingeholt.</p>
+<p>Die Funktionen, die Sie nutzen (die Warnungen für Ihre Gebiete und die Einstellungen der App), beruhen auf der Erbringung des Dienstes, den Sie mit der Nutzung anfordern (Art. 6 Abs. 1 lit. b DSGVO). Die technischen Protokolle mit der IP-Adresse beruhen auf dem berechtigten Interesse, den Dienst funktionsfähig zu halten und vor Missbrauch zu schützen (Art. 6 Abs. 1 lit. f DSGVO). Personalisierte Werbung beruht auf Ihrer <strong>Einwilligung</strong>, die über das Formular von Google (UMP) eingeholt wird und die Sie jederzeit unter <em>Einstellungen → Datenschutzoptionen für Werbung</em> widerrufen können. Über die Standort- und Benachrichtigungsberechtigung entscheiden Sie selbst in Android und können sie jederzeit entziehen.</p>
 <p>Die technischen Serverprotokolle mit IP-Adressen werden so lange aufbewahrt, wie Google Cloud sie standardmäßig vorhält (30 Tage), und anschließend automatisch gelöscht. Die auf Ihrem Telefon gespeicherten Daten bleiben dort, bis Sie die App deinstallieren oder ihre Daten löschen.</p>
 
 <h2>Ihre Rechte</h2>
@@ -137,10 +141,10 @@
 <p>Sie können sich außerdem bei der Datenschutz-Aufsichtsbehörde Ihres Landes beschweren. Eine Übersicht der Aufsichtsbehörden in der EU finden Sie beim <a href="https://www.edpb.europa.eu/about-edpb/about-edpb/members_de">Europäischen Datenschutzausschuss</a>. In Spanien, dem Land des Verantwortlichen, ist es die <a href="https://www.aepd.es">Agencia Española de Protección de Datos</a>.</p>
 
 <h2>Minderjährige</h2>
-<p>Diese App richtet sich nicht an Kinder unter 13 Jahren und erhebt wissentlich keine Daten von ihnen.</p>
+<p>Diese App richtet sich nicht an Personen unter 16 Jahren und erhebt wissentlich keine Daten von ihnen.</p>
 
 <h2>Änderungen dieser Erklärung</h2>
-<p>Wenn sich diese Erklärung wesentlich ändert, wird die neue Fassung unter derselben Adresse mit einem neuen Aktualisierungsdatum veröffentlicht, und die App zeigt einen entsprechenden Hinweis an.</p>
+<p>Wenn sich diese Erklärung wesentlich ändert, wird die neue Fassung unter derselben Adresse mit einem neuen Aktualisierungsdatum veröffentlicht, und die Versionshinweise der App weisen darauf hin.</p>
 
 <h2>Wichtiger Hinweis zum Dienst</h2>
 <p>Diese App ist <strong>kein offizielles Frühwarnsystem</strong>. Die Warnungen kommen an, wenn das Erdbeben bereits stattgefunden und ein seismologisches Institut es veröffentlicht hat. Die Daten sind vorläufig und können überarbeitet oder zurückgezogen werden. Sie ersetzt nicht die Anweisungen des Katastrophenschutzes oder der Rettungsdienste.</p>

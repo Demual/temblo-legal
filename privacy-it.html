@@ -29,7 +29,7 @@
 </head>
 <body>
 <h1>Informativa sulla privacy</h1>
-<p class="fecha">App <strong>Tembló</strong> (<code>com.jrsoft.terremotos</code>) · Ultimo aggiornamento: 1 ottobre 2026</p>
+<p class="fecha">App <strong>Tembló</strong> (<code>com.jrsoft.terremotos</code>) · Ultimo aggiornamento: 14 ottobre 2026</p>
 <p class="fecha">Questa è una traduzione della <a href="privacidad-es.html">versione spagnola</a>. In caso di discrepanza, prevale la versione spagnola.</p>
 
 <div class="clave">
@@ -42,7 +42,7 @@
 <h2>Cosa questa app NON fa</h2>
 <ul>
   <li>Non c'è registrazione, account, nome utente né password. Non ti viene mai chiesto un indirizzo e-mail, un numero di telefono né un nome.</li>
-  <li>Non si usa nessuno strumento di analisi o di statistiche d'uso. Non c'è Google Analytics, né Firebase Analytics, né segnalazione degli arresti anomali.</li>
+  <li>Non si usa nessuno strumento proprio di analisi né di segnalazione degli arresti anomali: niente Google Analytics, né Firebase Analytics, né Crashlytics. Gli SDK di Google inclusi nell'app (AdMob e Google Maps) raccolgono per conto proprio dati tecnici e di diagnostica e, nel caso di AdMob, le interazioni con gli annunci, per pubblicità, misurazione, prevenzione delle frodi e miglioramento dei loro servizi, secondo le proprie norme.</li>
   <li>Nessun dato viene venduto, affittato o ceduto a terzi a fini commerciali.</li>
   <li><strong>La tua posizione non viene mai inviata ai server di questa app.</strong> L'app scarica l'elenco dei terremoti di tutto il mondo ed esegue tutti i calcoli di distanza e tutti i filtri dentro il tuo telefono. Il server non sa dove sei, quale zona della mappa stai guardando né quali terremoti ti interessano.</li>
 </ul>
@@ -56,6 +56,7 @@
   <li>Il <strong>punto di riferimento manuale</strong>, se lo hai definito.</li>
   <li>L'ultima posizione della mappa, se scegli che l'app si apra dove l'hai lasciata.</li>
   <li>Una copia degli ultimi terremoti scaricati, perché l'app funzioni anche offline.</li>
+  <li>Il paese della tua scheda SIM (o, se non c'è, quello della regione del sistema), che la schermata «Altre app di JR Soft» consulta sul momento per mostrare solo le app disponibili nel tuo paese. Non viene salvato né inviato. I link a Google Play di quella schermata portano un'etichetta che dice che vengono da Tembló, senza alcun dato su di te.</li>
 </ul>
 
 <h2>Dati che escono dal telefono</h2>
@@ -77,14 +78,14 @@
 <p>L'indirizzo IP resta nei registri tecnici del server di questa app, che servono a diagnosticare errori e a rilevare abusi. Non viene incrociato con nessun altro dato, perché non c'è nessun altro dato con cui incrociarlo: le richieste non portano alcun identificatore di utente né di dispositivo.</p>
 
 <h3>Identificatore delle notifiche</h3>
-<p>Se attivi gli avvisi, Firebase Cloud Messaging assegna alla tua installazione un identificatore proprio per poter recapitare i messaggi. È un identificatore del dispositivo, non tuo, e si rinnova se disinstalli e reinstalli l'app. Disattivare gli avvisi nell'app annulla le iscrizioni.</p>
+<p>Se attivi gli avvisi, Firebase Cloud Messaging assegna alla tua installazione un identificatore proprio per poter recapitare i messaggi. È un identificatore del dispositivo, non tuo, e si rinnova se disinstalli e reinstalli l'app. Disattivare gli avvisi nell'app annulla le iscrizioni. Firebase conserva questo identificativo finché non viene eliminato e, dopo, fino a 180 giorni nelle sue copie di backup.</p>
 
 <h3>Configurazione remota della pubblicità</h3>
 <p>Per poter regolare o ritirare la pubblicità senza pubblicare una nuova versione (per esempio dopo un terremoto grave), l'app chiede a <strong>Firebase Remote Config</strong>, di Google, dove e con quale frequenza mostrare gli annunci. Questa richiesta porta un identificatore dell'installazione generato da Firebase, ma nessun tuo dato né la tua posizione.</p>
 
 <h3>ID pubblicità</h3>
 <p>L'app include l'SDK pubblicitario di Google (AdMob) e quindi dichiara l'autorizzazione <code>com.google.android.gms.permission.AD_ID</code>, che dà accesso all'ID pubblicità di Android. Questo identificatore si può reimpostare ed eliminare da <em>Impostazioni di Android → Google → Annunci</em>.</p>
-<p>Nei paesi dello Spazio economico europeo e nel Regno Unito, l'app mostra il modulo di consenso di Google (UMP) prima di offrire pubblicità personalizzata. Puoi cambiare la tua scelta in qualsiasi momento dalle impostazioni dell'app.</p>
+<p>Nei paesi dello Spazio economico europeo, nel Regno Unito e in Svizzera, l'app mostra il modulo di consenso di Google (UMP) prima di offrire pubblicità personalizzata. Puoi cambiare la tua scelta in qualsiasi momento dalle impostazioni dell'app.</p>
 <p>Quel modulo cita la <strong>geolocalizzazione precisa</strong> tra le finalità che i fornitori pubblicitari possono richiedere, ed è bene essere precisi su cosa significhi. <strong>Questa app non consegna le tue coordinate all'SDK pubblicitario</strong>: la richiesta di annuncio parte senza alcun dato di posizione. Ciò che il modulo ti chiede è se acconsenti a che Google e i fornitori lì elencati trattino dati per quelle finalità, secondo le proprie politiche e con i propri mezzi. Se rifiuti, vedrai pubblicità non personalizzata e l'app funzionerà esattamente allo stesso modo.</p>
 
 <h2>Terze parti coinvolte</h2>
@@ -123,8 +124,11 @@
 </table>
 <p>I dati sismici mostrati dall'app provengono dall'USGS e dall'EMSC. Questa app non è affiliata a nessuna delle due organizzazioni.</p>
 
+<h2>Trasferimenti fuori dall'Europa</h2>
+<p>Google (Firebase, Google Maps e AdMob) può trattare dati al di fuori dello Spazio economico europeo. Google LLC aderisce al quadro UE-USA per la protezione dei dati personali (Data Privacy Framework). Se il server principale non risponde, l'app interroga direttamente l'USGS, negli Stati Uniti, che riceve il tuo indirizzo IP come in qualsiasi visita al suo sito.</p>
+
 <h2>Base giuridica e conservazione</h2>
-<p>Il trattamento si basa sul tuo <strong>consenso</strong>, che dai concedendo le autorizzazioni alla posizione e alle notifiche e che puoi revocare in qualsiasi momento dalle impostazioni di Android o dall'app stessa. Per la pubblicità personalizzata, il consenso viene raccolto tramite il modulo di Google (UMP).</p>
+<p>Le funzioni che usi (gli avvisi delle tue zone e le impostazioni dell'app) si basano sulla prestazione del servizio che richiedi usandola (art. 6, par. 1, lett. b, del GDPR). I registri tecnici con l'indirizzo IP si basano sul legittimo interesse a mantenere il servizio funzionante e a proteggerlo dagli abusi (art. 6, par. 1, lett. f). La pubblicità personalizzata si basa sul tuo <strong>consenso</strong>, raccolto con il modulo di Google (UMP), che puoi revocare quando vuoi da <em>Impostazioni → Opzioni di privacy degli annunci</em>. Le autorizzazioni alla posizione e alle notifiche le decidi tu in Android e puoi toglierle quando vuoi.</p>
 <p>I registri tecnici del server con gli indirizzi IP si conservano per il tempo previsto di default da Google Cloud (30 giorni) e poi si cancellano automaticamente. I dati salvati sul tuo telefono vi restano finché non disinstalli l'app o ne cancelli i dati.</p>
 
 <h2>I tuoi diritti</h2>
@@ -137,10 +141,10 @@
 <p>Puoi anche presentare reclamo all'autorità di controllo del tuo paese. In Italia è il <a href="https://www.garanteprivacy.it">Garante per la protezione dei dati personali</a>; in Spagna, paese del titolare, l'<a href="https://www.aepd.es">Agencia Española de Protección de Datos</a>.</p>
 
 <h2>Minori</h2>
-<p>Questa app non è destinata ai minori di 13 anni e non raccoglie consapevolmente loro dati.</p>
+<p>Questa app non è destinata ai minori di 16 anni e non raccoglie consapevolmente loro dati.</p>
 
 <h2>Modifiche a questa informativa</h2>
-<p>Se questa informativa cambia in modo sostanziale, la nuova versione sarà pubblicata a questo stesso indirizzo con una data di aggiornamento diversa, e l'app mostrerà l'avviso corrispondente.</p>
+<p>Se questa informativa cambia in modo sostanziale, la nuova versione sarà pubblicata a questo stesso indirizzo con un'altra data di aggiornamento, e lo diranno le note di versione dell'app.</p>
 
 <h2>Avvertenza importante sul servizio</h2>
 <p>Questa app <strong>non è un sistema ufficiale di allerta precoce</strong>. Gli avvisi arrivano quando il terremoto è già avvenuto e un'agenzia sismologica lo ha pubblicato. I dati sono preliminari e possono essere rivisti o ritirati. Non sostituisce le indicazioni della Protezione Civile né dei servizi di emergenza.</p>
