@@ -92,7 +92,7 @@
 <h3>Advertising identifier</h3>
 <p>The app includes Google's advertising SDK (AdMob) and therefore declares the <code>com.google.android.gms.permission.AD_ID</code> permission, which grants access to the Android advertising identifier. That identifier can be reset or deleted from <em>Android Settings → Google → Ads</em>.</p>
 <p>In the European Economic Area, the United Kingdom and Switzerland, the app will show Google's consent form (UMP) before serving personalised advertising. You can change your choice at any time from the app's settings.</p>
-<p>That form lists <strong>precise geolocation</strong> among the purposes advertising vendors may ask for, and it is worth being exact about what that means. <strong>This app does not hand your coordinates to the advertising SDK</strong>: the ad request goes out with no location data attached. What the form asks is whether you consent to Google and the vendors listed there processing data for those purposes, under their own policies and by their own means. If you decline, you get non-personalised advertising and the app works exactly the same.</p>
+<p>That form lists <strong>precise geolocation</strong> among the purposes advertising vendors may ask for, and it is worth being exact about what that means. <strong>This app does not hand your coordinates to the advertising SDK</strong>: the ad request goes out without them. Like any internet connection, it carries your IP address, from which Google can infer an approximate location (roughly city level). What the form asks is whether you consent to Google and the vendors listed there processing data for those purposes, under their own policies and by their own means. If you decline, you get non-personalised advertising and the app works exactly the same.</p>
 
 <h2>Third parties involved</h2>
 <table>
@@ -147,7 +147,7 @@
 <p>You may also lodge a complaint with your country's supervisory authority. In Spain this is the <a href="https://www.aepd.es">Agencia Española de Protección de Datos</a>.</p>
 
 <h2>US residents</h2>
-<p>If you live in a US state with its own privacy law (for example, California, Colorado, Connecticut, Texas or Virginia), you have the right to ask that your personal data not be sold or shared for targeted advertising. You can do this in the app: Settings → “Ad privacy options” → “Don't sell or share my data”. From then on, you will only see non-personalised ads. The app does not collect sensitive data; for ads, Google's SDK uses device identifiers and an approximate location (at city level). For any other request about your data, write to us at <a href="mailto:demual@gmail.com">demual@gmail.com</a>.</p>
+<p>If you live in a US state with its own privacy law (for example, California, Colorado, Connecticut, Texas or Virginia), you have the right to ask that your personal data not be sold or shared for targeted advertising. You can do this in the app: Settings → “Ad privacy options” → “Don't sell or share my data”. From then on, you will only see non-personalised ads. The app does not send sensitive data to anyone: your coordinates never leave the phone. For ads, Google's SDK uses device identifiers and an approximate location (at city level) inferred from your IP address. For any other request about your data, write to us at <a href="mailto:demual@gmail.com">demual@gmail.com</a>.</p>
 
 <h2>Children</h2>
 <p>This app is not directed at children under 16 and does not knowingly collect data from them.</p>
