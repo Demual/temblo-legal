@@ -56,6 +56,7 @@
   <li>Le <strong>point de référence manuel</strong>, si vous l'avez défini.</li>
   <li>La dernière position de la carte, si vous choisissez que l'application s'ouvre là où vous l'avez laissée.</li>
   <li>Une copie des derniers séismes téléchargés, pour que l'application fonctionne hors ligne.</li>
+  <li>Les compteurs qui décident quand vous proposer de noter l'application : combien de fois vous l'avez ouverte, combien de fois vous êtes revenu à la carte après avoir lu la fiche d'un séisme (sans compter celles que vous ouvrez depuis une alerte ni celles des séismes graves) et la date de la dernière proposition.</li>
   <li>Le pays de votre carte SIM (ou, à défaut, celui de la région du système), que l'écran « Plus d'applications de JR Soft » consulte sur le moment pour n'afficher que les applications disponibles dans votre pays. Il n'est ni enregistré ni envoyé. Les liens vers Google Play de cet écran portent une étiquette indiquant qu'ils viennent de Tembló, sans aucune donnée vous concernant.</li>
 </ul>
 
@@ -79,6 +80,7 @@
   <li><strong>Google Maps</strong>, qui fournit les images de la carte.</li>
   <li><strong>Firebase Cloud Messaging</strong>, de Google, qui distribue les alertes.</li>
   <li><strong>Firebase Remote Config</strong>, de Google, qui indique à l'application où et à quelle fréquence afficher des annonces.</li>
+  <li><strong>Google Play</strong>, s'il vous propose de noter l'application ou si vous la notez.</li>
 </ul>
 <p>L'adresse IP figure dans les journaux techniques du serveur de cette application, qui servent à diagnostiquer les erreurs et à détecter les abus. Elle n'est croisée avec aucune autre donnée, car il n'y a aucune autre donnée avec laquelle la croiser : les requêtes ne portent aucun identifiant d'utilisateur ni d'appareil.</p>
 
@@ -92,6 +94,9 @@
 <p>L'application intègre le SDK publicitaire de Google (AdMob) et déclare donc l'autorisation <code>com.google.android.gms.permission.AD_ID</code>, qui donne accès à l'identifiant publicitaire d'Android. Cet identifiant peut être réinitialisé et supprimé depuis <em>Paramètres d'Android → Google → Annonces</em>.</p>
 <p>Dans les pays de l'Espace économique européen, au Royaume-Uni et en Suisse, l'application affiche le formulaire de consentement de Google (UMP) avant de diffuser de la publicité personnalisée. Vous pouvez modifier votre choix à tout moment depuis les paramètres de l'application.</p>
 <p>Ce formulaire mentionne la <strong>géolocalisation précise</strong> parmi les finalités que les partenaires publicitaires peuvent demander, et il convient d'être exact sur ce que cela signifie. <strong>Cette application ne transmet pas vos coordonnées au SDK publicitaire</strong> : la demande d'annonce part sans elles. Comme toute connexion à Internet, elle transporte votre adresse IP, dont Google peut déduire une localisation approximative (à l'échelle de la ville). Ce que le formulaire vous demande, c'est si vous consentez à ce que Google et les partenaires qui y sont énumérés traitent des données pour ces finalités, selon leurs propres politiques et par leurs propres moyens. Si vous refusez, vous verrez de la publicité non personnalisée et l'application fonctionnera exactement de la même façon.</p>
+
+<h3>Noter l’application : Google Play</h3>
+<p>Si vous touchez « Noter l’application », ou si Google Play vous propose de la noter, la note se donne dans une fenêtre de Google Play, avec votre compte et selon les conditions de Google. L’application ne voit ni n’enregistre la note ni ce que vous écrivez.</p>
 
 <h2>Tiers concernés</h2>
 <table>
@@ -125,6 +130,11 @@
     <td>EMSC</td>
     <td>Données sismiques (via notre serveur)</td>
     <td><a href="https://www.emsc-csem.org/">emsc-csem.org</a></td>
+  </tr>
+  <tr>
+    <td>Google Play</td>
+    <td>Demander et recueillir votre note de l’application, si vous en donnez une</td>
+    <td><a href="https://policies.google.com/privacy">policies.google.com/privacy</a></td>
   </tr>
 </table>
 <p>Les données sismiques affichées par l'application proviennent de l'USGS et de l'EMSC. Cette application n'est affiliée à aucune de ces deux organisations.</p>

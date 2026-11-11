@@ -57,6 +57,7 @@
   <li>The <strong>manual reference point</strong>, if you have set one.</li>
   <li>The last map position, if you choose to have the app open where you left it.</li>
   <li>A copy of the most recently downloaded earthquakes, so the app works offline.</li>
+  <li>The counters that decide when to suggest you rate the app: how many times you have opened it, how many times you have gone back to the map after reading an earthquake’s details (not counting those you open from an alert or those of serious earthquakes) and the date it was last suggested.</li>
   <li>The country of your SIM card (or, if there is none, that of the system region), which the “More apps by JR Soft” screen checks at that moment to show only the apps available in your country. It is neither stored nor sent. The Google Play links on that screen carry a tag saying they come from Tembló, without any data about you.</li>
 </ul>
 
@@ -80,6 +81,7 @@
   <li><strong>Google Maps</strong>, which serves the map imagery.</li>
   <li><strong>Firebase Cloud Messaging</strong>, from Google, which delivers alerts.</li>
   <li><strong>Firebase Remote Config</strong>, from Google, which tells the app where and how often to show ads.</li>
+  <li><strong>Google Play</strong>, if it suggests rating the app or you rate it.</li>
 </ul>
 <p>Your IP address appears in this app's server technical logs, which exist to diagnose errors and detect abuse. It is not cross-referenced with any other data, because there is no other data to cross-reference it with: requests carry no user or device identifier.</p>
 
@@ -93,6 +95,9 @@
 <p>The app includes Google's advertising SDK (AdMob) and therefore declares the <code>com.google.android.gms.permission.AD_ID</code> permission, which grants access to the Android advertising identifier. That identifier can be reset or deleted from <em>Android Settings → Google → Ads</em>.</p>
 <p>In the European Economic Area, the United Kingdom and Switzerland, the app will show Google's consent form (UMP) before serving personalised advertising. You can change your choice at any time from the app's settings.</p>
 <p>That form lists <strong>precise geolocation</strong> among the purposes advertising vendors may ask for, and it is worth being exact about what that means. <strong>This app does not hand your coordinates to the advertising SDK</strong>: the ad request goes out without them. Like any internet connection, it carries your IP address, from which Google can infer an approximate location (roughly city level). What the form asks is whether you consent to Google and the vendors listed there processing data for those purposes, under their own policies and by their own means. If you decline, you get non-personalised advertising and the app works exactly the same.</p>
+
+<h3>Rating the app: Google Play</h3>
+<p>If you tap “Rate the app”, or Google Play suggests rating it, the rating happens in a Google Play window, with your account and under Google’s terms. The app neither sees nor stores the stars or what you write.</p>
 
 <h2>Third parties involved</h2>
 <table>
@@ -126,6 +131,11 @@
     <td>EMSC</td>
     <td>Seismic data (via our server)</td>
     <td><a href="https://www.emsc-csem.org/">emsc-csem.org</a></td>
+  </tr>
+  <tr>
+    <td>Google Play</td>
+    <td>Asking for and collecting your rating of the app, if you give one</td>
+    <td><a href="https://policies.google.com/privacy">policies.google.com/privacy</a></td>
   </tr>
 </table>
 <p>The seismic data shown in the app comes from USGS and EMSC. This app is not affiliated with either organisation.</p>

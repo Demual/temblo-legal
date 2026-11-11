@@ -56,6 +56,7 @@
   <li>El <strong>punt de referència manual</strong>, si l'has definit.</li>
   <li>La darrera posició del mapa, si tries que l'aplicació s'obri on la vas deixar.</li>
   <li>Una còpia dels darrers terratrèmols baixats, perquè l'aplicació funcioni sense connexió.</li>
+  <li>Els comptadors que decideixen quan proposar-te que valoris l'aplicació: quantes vegades l'has oberta, quantes vegades has tornat al mapa després de llegir la fitxa d'un terratrèmol (sense comptar les que obres des d'un avís ni les de terratrèmols greus) i la data de l'última vegada que se t'ha proposat.</li>
   <li>El país de la teva targeta SIM (o, si no n'hi ha, el de la regió del sistema), que la pantalla «Més aplicacions de JR Soft» consulta en el moment per mostrar només les aplicacions disponibles al teu país. No es desa ni s'envia. Els enllaços a Google Play d'aquesta pantalla porten una etiqueta que diu que vénen de Tembló, sense cap dada teva.</li>
 </ul>
 
@@ -79,6 +80,7 @@
   <li><strong>Google Maps</strong>, que serveix les imatges del mapa.</li>
   <li><strong>Firebase Cloud Messaging</strong>, de Google, que lliura els avisos.</li>
   <li><strong>Firebase Remote Config</strong>, de Google, que indica a l'aplicació on i amb quina freqüència ha de mostrar anuncis.</li>
+  <li><strong>Google Play</strong>, si et proposa valorar l'aplicació o la valores.</li>
 </ul>
 <p>L'adreça IP queda als registres tècnics del servidor d'aquesta aplicació, que serveixen per diagnosticar errors i detectar abusos. No es creua amb cap altra dada perquè no hi ha cap altra dada amb què creuar-la: les peticions no porten identificador d'usuari ni de dispositiu.</p>
 
@@ -92,6 +94,9 @@
 <p>L'aplicació inclou l'SDK de publicitat de Google (AdMob) i, per tant, declara el permís <code>com.google.android.gms.permission.AD_ID</code>, que dona accés a l'identificador de publicitat d'Android. Aquest identificador es pot restablir i esborrar des de <em>Configuració d'Android → Google → Anuncis</em>.</p>
 <p>Als països de l'Espai Econòmic Europeu, al Regne Unit i a Suïssa, l'aplicació mostrarà el formulari de consentiment de Google (UMP) abans de servir publicitat personalitzada. Pots canviar la teva elecció en qualsevol moment des de la configuració de l'aplicació.</p>
 <p>Aquest formulari esmenta la <strong>geolocalització precisa</strong> entre les finalitats que els proveïdors publicitaris poden sol·licitar, i convé ser exactes sobre què vol dir. <strong>Aquesta aplicació no lliura les teves coordenades a l'SDK de publicitat</strong>: la petició d'anunci surt sense elles. Com qualsevol connexió a internet, porta la teva adreça IP, de la qual Google pot deduir una ubicació aproximada (a escala de ciutat). El que el formulari et pregunta és si consents que Google i els proveïdors que s'hi enumeren tractin dades per a aquestes finalitats, amb les seves pròpies polítiques i pels seus propis mitjans. Si ho rebutges, veuràs publicitat no personalitzada i l'aplicació funcionarà exactament igual.</p>
+
+<h3>Valorar l'aplicació: Google Play</h3>
+<p>Si toques «Valora l'aplicació», o si Google Play et proposa valorar-la, la valoració es fa en una finestra de Google Play, amb el teu compte i les condicions de Google. L'aplicació no veu ni desa la puntuació ni el que escriguis.</p>
 
 <h2>Tercers implicats</h2>
 <table>
@@ -125,6 +130,11 @@
     <td>EMSC</td>
     <td>Dades sísmiques (a través del nostre servidor)</td>
     <td><a href="https://www.emsc-csem.org/">emsc-csem.org</a></td>
+  </tr>
+  <tr>
+    <td>Google Play</td>
+    <td>Demanar i recollir la teva valoració de l'aplicació, si la dones</td>
+    <td><a href="https://policies.google.com/privacy">policies.google.com/privacy</a></td>
   </tr>
 </table>
 <p>Les dades sísmiques que mostra l'aplicació procedeixen de l'USGS i l'EMSC. Aquesta aplicació no està afiliada a cap de les dues organitzacions.</p>

@@ -56,6 +56,7 @@
   <li>Der <strong>manuelle Bezugspunkt</strong>, falls Sie einen festgelegt haben.</li>
   <li>Die letzte Kartenposition, falls Sie möchten, dass die App dort öffnet, wo Sie aufgehört haben.</li>
   <li>Eine Kopie der zuletzt heruntergeladenen Erdbeben, damit die App auch offline funktioniert.</li>
+  <li>Die Zähler, die entscheiden, wann Ihnen vorgeschlagen wird, die App zu bewerten: wie oft Sie sie geöffnet haben, wie oft Sie nach dem Lesen der Details eines Erdbebens zur Karte zurückgekehrt sind (ohne die, die Sie über eine Warnung öffnen, und ohne schwere Erdbeben) und das Datum des letzten Vorschlags.</li>
   <li>Das Land Ihrer SIM-Karte (oder, falls keine vorhanden ist, das der Systemregion), das der Bildschirm „Weitere Apps von JR Soft“ in dem Moment abfragt, um nur die in Ihrem Land verfügbaren Apps zu zeigen. Es wird weder gespeichert noch gesendet. Die Google-Play-Links auf diesem Bildschirm tragen eine Kennzeichnung, dass sie von Tembló kommen, ohne Daten über Sie.</li>
 </ul>
 
@@ -79,6 +80,7 @@
   <li><strong>Google Maps</strong>, das die Kartenbilder liefert.</li>
   <li><strong>Firebase Cloud Messaging</strong> von Google, das die Warnungen zustellt.</li>
   <li><strong>Firebase Remote Config</strong> von Google, das der App mitteilt, wo und wie oft Werbung angezeigt wird.</li>
+  <li><strong>Google Play</strong>, wenn es Ihnen eine Bewertung der App vorschlägt oder Sie sie bewerten.</li>
 </ul>
 <p>Die IP-Adresse wird in den technischen Protokollen des Servers dieser App gespeichert, die der Fehlerdiagnose und der Erkennung von Missbrauch dienen. Sie wird mit keinen anderen Daten verknüpft, weil es keine anderen Daten gibt, mit denen sie verknüpft werden könnte: Die Anfragen enthalten weder eine Benutzer- noch eine Gerätekennung.</p>
 
@@ -92,6 +94,9 @@
 <p>Die App enthält das Werbe-SDK von Google (AdMob) und deklariert daher die Berechtigung <code>com.google.android.gms.permission.AD_ID</code>, die Zugriff auf die Android-Werbe-ID gewährt. Diese Kennung können Sie unter <em>Android-Einstellungen → Google → Werbung</em> zurücksetzen und löschen.</p>
 <p>In den Ländern des Europäischen Wirtschaftsraums, im Vereinigten Königreich und in der Schweiz zeigt die App das Einwilligungsformular von Google (UMP) an, bevor personalisierte Werbung ausgeliefert wird. Sie können Ihre Entscheidung jederzeit in den Einstellungen der App ändern.</p>
 <p>Dieses Formular nennt die <strong>genaue Standortbestimmung</strong> unter den Zwecken, die Werbepartner anfragen können, und es lohnt sich, genau zu sein, was das bedeutet. <strong>Diese App übergibt Ihre Koordinaten nicht an das Werbe-SDK</strong>: Die Anzeigenanfrage wird ohne sie gesendet. Wie jede Internetverbindung enthält sie Ihre IP-Adresse, aus der Google einen ungefähren Standort (etwa auf Stadtebene) ableiten kann. Das Formular fragt Sie, ob Sie einwilligen, dass Google und die dort aufgeführten Partner Daten für diese Zwecke verarbeiten, nach ihren eigenen Richtlinien und mit ihren eigenen Mitteln. Wenn Sie ablehnen, sehen Sie nicht personalisierte Werbung, und die App funktioniert genau gleich.</p>
+
+<h3>Die App bewerten: Google Play</h3>
+<p>Wenn Sie auf „App bewerten“ tippen oder Google Play Ihnen eine Bewertung vorschlägt, findet die Bewertung in einem Fenster von Google Play statt, mit Ihrem Konto und zu den Bedingungen von Google. Die App sieht und speichert weder die Sterne noch das, was Sie schreiben.</p>
 
 <h2>Beteiligte Dritte</h2>
 <table>
@@ -125,6 +130,11 @@
     <td>EMSC</td>
     <td>Seismische Daten (über unseren Server)</td>
     <td><a href="https://www.emsc-csem.org/">emsc-csem.org</a></td>
+  </tr>
+  <tr>
+    <td>Google Play</td>
+    <td>Ihre Bewertung der App erbitten und entgegennehmen, wenn Sie eine abgeben</td>
+    <td><a href="https://policies.google.com/privacy">policies.google.com/privacy</a></td>
   </tr>
 </table>
 <p>Die seismischen Daten, die die App anzeigt, stammen vom USGS und vom EMSC. Diese App ist mit keiner der beiden Organisationen verbunden.</p>

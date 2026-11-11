@@ -56,6 +56,7 @@
   <li>O <strong>ponto de referência manual</strong>, se o tiver definido.</li>
   <li>A última posição do mapa, se escolher que a aplicação abra onde a deixou.</li>
   <li>Uma cópia dos últimos sismos descarregados, para que a aplicação funcione sem ligação.</li>
+  <li>Os contadores que decidem quando lhe propor que avalie a aplicação: quantas vezes a abriu, quantas vezes voltou ao mapa depois de ler a ficha de um sismo (sem contar as que abre a partir de um aviso nem as de sismos graves) e a data da última vez que lho propôs.</li>
   <li>O país do seu cartão SIM (ou, se não houver, o da região do sistema), que o ecrã «Mais aplicações da JR Soft» consulta no momento para mostrar apenas as aplicações disponíveis no seu país. Não é guardado nem enviado. As ligações para o Google Play desse ecrã levam uma etiqueta que diz que vêm do Tembló, sem nenhum dado seu.</li>
 </ul>
 
@@ -79,6 +80,7 @@
   <li>O <strong>Google Maps</strong>, que fornece as imagens do mapa.</li>
   <li>O <strong>Firebase Cloud Messaging</strong>, da Google, que entrega os alertas.</li>
   <li>O <strong>Firebase Remote Config</strong>, da Google, que indica à aplicação onde e com que frequência mostrar anúncios.</li>
+  <li>O <strong>Google Play</strong>, se lhe propuser avaliar a aplicação ou se a avaliar.</li>
 </ul>
 <p>O endereço IP fica nos registos técnicos do servidor desta aplicação, que servem para diagnosticar erros e detetar abusos. Não é cruzado com nenhum outro dado, porque não existe nenhum outro dado com que o cruzar: os pedidos não levam identificador de utilizador nem de dispositivo.</p>
 
@@ -92,6 +94,9 @@
 <p>A aplicação inclui o SDK de publicidade da Google (AdMob) e, por isso, declara a permissão <code>com.google.android.gms.permission.AD_ID</code>, que dá acesso ao identificador de publicidade do Android. Este identificador pode ser reposto e apagado em <em>Ajustes do Android → Google → Anúncios</em>.</p>
 <p>Nos países do Espaço Económico Europeu, no Reino Unido e na Suíça, a aplicação mostra o formulário de consentimento da Google (UMP) antes de servir publicidade personalizada. Pode alterar a sua escolha em qualquer momento nos ajustes da aplicação.</p>
 <p>Esse formulário menciona a <strong>geolocalização precisa</strong> entre as finalidades que os fornecedores de publicidade podem pedir, e convém ser exato sobre o que isso significa. <strong>Esta aplicação não entrega as suas coordenadas ao SDK de publicidade</strong>: o pedido de anúncio sai sem elas. Como qualquer ligação à Internet, leva o seu endereço IP, a partir do qual a Google pode deduzir uma localização aproximada (ao nível da cidade). O que o formulário lhe pergunta é se consente que a Google e os fornecedores ali enumerados tratem dados para essas finalidades, com as suas próprias políticas e pelos seus próprios meios. Se recusar, verá publicidade não personalizada e a aplicação funcionará exatamente da mesma forma.</p>
+
+<h3>Avaliar a aplicação: Google Play</h3>
+<p>Se tocar em «Avaliar a aplicação», ou se o Google Play lhe propuser avaliá-la, a avaliação faz-se numa janela do Google Play, com a sua conta e as condições da Google. A aplicação não vê nem guarda a classificação nem o que escrever.</p>
 
 <h2>Terceiros envolvidos</h2>
 <table>
@@ -125,6 +130,11 @@
     <td>EMSC</td>
     <td>Dados sísmicos (através do nosso servidor)</td>
     <td><a href="https://www.emsc-csem.org/">emsc-csem.org</a></td>
+  </tr>
+  <tr>
+    <td>Google Play</td>
+    <td>Pedir e recolher a sua avaliação da aplicação, se a der</td>
+    <td><a href="https://policies.google.com/privacy">policies.google.com/privacy</a></td>
   </tr>
 </table>
 <p>Os dados sísmicos que a aplicação mostra provêm do USGS e do EMSC. Esta aplicação não está afiliada a nenhuma das duas organizações.</p>
